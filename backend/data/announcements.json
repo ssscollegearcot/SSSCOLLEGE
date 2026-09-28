@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Admissions Open for 2026–27 — UG & PG Programmes",
+    "detail": "Applications are invited for all UG and PG programmes for the academic year 2026–27. Limited seats available. Apply through our online form or visit the college office.",
+    "category": "admissions",
+    "tag": "New",
+    "date": "2026-06-01",
+    "link": "#admissions",
+    "important": true
+  },
+  {
+    "id": 2,
+    "title": "Apr–May 2026 Semester Exam Results Released",
+    "detail": "Results for April–May 2026 semester examinations are now available on the TVU COE portal. Students can check results at coe.tvu.edu.in",
+    "category": "examinations",
+    "tag": "New",
+    "date": "2026-06-15",
+    "link": "https://coe.tvu.edu.in/student_result/",
+    "important": true
+  },
+  {
+    "id": 3,
+    "title": "Fee Structure 2026–27 Updated",
+    "detail": "The revised fee structure for the academic year 2026–27 has been updated. Check the Admissions section for details on tuition fees, lab fees and special fees.",
+    "category": "admissions",
+    "tag": "New",
+    "date": "2026-06-10",
+    "link": "#fees",
+    "important": false
+  },
+  {
+    "id": 4,
+    "title": "Previous Year Question Papers Uploaded",
+    "detail": "Previous year question papers for all UG and PG programmes (2019–2025) have been uploaded in the Examinations section. Students can view and download semester-wise papers.",
+    "category": "examinations",
+    "tag": "",
+    "date": "2026-05-20",
+    "link": "#qpapers",
+    "important": false
+  },
+  {
+    "id": 5,
+    "title": "Campus Placement Drive — Registrations Open",
+    "detail": "TCS, CTS, HCL and Infosys are visiting the campus for placements. Final-year students must register at the Placement Cell before July 15, 2026.",
+    "category": "placements",
+    "tag": "Urgent",
+    "date": "2026-06-20",
+    "link": "#placements",
+    "important": true
+  },
+  {
+    "id": 6,
+    "title": "New Gallery Added — Virtual Campus Tour",
+    "detail": "Explore our campus through the newly updated photo gallery featuring classrooms, labs, library, sports facilities and cultural events.",
+    "category": "gallery",
+    "tag": "",
+    "date": "2026-06-05",
+    "link": "#gallery",
+    "important": false
+  },
+  {
+    "id": 7,
+    "title": "Merit-Based Scholarship Applications Open",
+    "detail": "Students scoring 1000+ in HSC (+2) are eligible for up to 15% tuition fee concession. Applications to be submitted at the college office by July 31.",
+    "category": "admissions",
+    "tag": "New",
+    "date": "2026-06-25",
+    "link": "#admissions",
+    "important": false
+  },
+  {
+    "id": 8,
+    "title": "Tamil Nadu Government Scholarship — Special Schemes",
+    "detail": "Students belonging to SC/ST/BC/MBC categories can avail state government scholarship schemes. Required documents to be submitted to the scholarship cell.",
+    "category": "admissions",
+    "tag": "",
+    "date": "2026-06-18",
+    "link": "#admissions",
+    "important": false
+  },
+  {
+    "id": 9,
+    "title": "TVU Examination Timetable — Nov/Dec 2026 Published",
+    "detail": "Thiruvalluvar University has published the timetable for November/December 2026 end-semester examinations. Check the TVU website for details.",
+    "category": "examinations",
+    "tag": "",
+    "date": "2026-06-30",
+    "link": "https://www.tvu.edu.in/examination/examination-time-table/",
+    "important": false
+  },
+  {
+    "id": 10,
+    "title": "Anti-Ragging Cell — Helpline Active",
+    "detail": "The college Anti-Ragging Cell is active 24/7. Any ragging incident can be reported to the helpline number or directly to the Principal.",
+    "category": "general",
+    "tag": "",
+    "date": "2026-06-01",
+    "link": "#contact",
+    "important": false
+  }
+]

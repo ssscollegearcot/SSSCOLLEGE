@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSS College — Class Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo-area">
+      <span class="logo-icon">&#127891;</span>
+      <div>
+        <h1>SSS College of Arts, Science &amp; Management</h1>
+        <p class="subtitle">Class Notes Portal</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h2>Daily Class Notes</h2>
+    <p>Access lecture notes, assignments, and study materials — updated every day by your lecturers.</p>
+    <div class="stats" id="statsBar">
+      <div class="stat-card"><span class="stat-num" id="totalNotes">0</span><span class="stat-label">Total Notes</span></div>
+      <div class="stat-card"><span class="stat-num" id="totalDepts">0</span><span class="stat-label">Departments</span></div>
+      <div class="stat-card"><span class="stat-num" id="totalSubjects">0</span><span class="stat-label">Subjects</span></div>
+    </div>
+  </section>
+
+  <section class="filters-section">
+    <div class="filters" id="filtersBar">
+      <div class="filter-group">
+        <label>Department</label>
+        <select id="fDept"><option value="">All Departments</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Year</label>
+        <select id="fYear"><option value="">All Years</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Semester</label>
+        <select id="fSem"><option value="">All Semesters</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Note Type</label>
+        <select id="fType"><option value="">All Types</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Search</label>
+        <input type="text" id="fSearch" placeholder="Search title, subject...">
+      </div>
+      <div class="filter-group">
+        <label>Date Added</label>
+        <select id="fDate">
+          <option value="">All Time</option>
+          <option value="today">Today</option>
+          <option value="week">This Week</option>
+          <option value="month">This Month</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Sort By</label>
+        <select id="fSort">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="subject">Subject A-Z</option>
+        </select>
+      </div>
+      <button class="reset-btn" id="resetBtn">↺ Reset</button>
+    </div>
+    <div class="result-bar"><span id="resultCount">Showing 0 notes</span></div>
+  </section>
+
+  <div class="grid" id="notesGrid"></div>
+
+  <div class="empty" id="emptyState" style="display:none;">
+    <span class="empty-icon">📚</span>
+    <h3>No notes found</h3>
+    <p>No notes match your filters. Try adjusting your selection or check back later.</p>
+  </div>
+
+</main>
+
+<div class="modal-overlay" id="pdfModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modalTitle">Note Title</h3>
+      <button class="modal-close" id="modalClose">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-info">
+        <span id="modalSubject">Subject</span>
+        <span class="dot">·</span>
+        <span id="modalStaff">Staff</span>
+        <span class="dot">·</span>
+        <span id="modalDate">Date</span>
+        <span class="dot">·</span>
+        <span id="modalType">Type</span>
+      </div>
+      <iframe id="pdfFrame" src="" title="PDF Viewer"></iframe>
+      <a class="download-btn" id="downloadBtn" href="" download>
+        &#11015; Download PDF
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>SSS College of Arts, Science &amp; Management — Arcot</p>
+    <p class="footer-sub">Affiliated to Thiruvalluvar University | NAAC Accredited</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

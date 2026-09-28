@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSS College of Arts, Science &amp; Management — Arcot | Affiliated to Thiruvalluvar University</title>
+  <meta name="description" content="SSS College of Arts, Science and Management, Arcot — affiliated to Thiruvalluvar University (NAAC ). 15+ UG &amp; PG programmes, 1900+ students, admissions open 2026-27.">
+  <meta name="keywords" content="SSS College Arcot, Arts Science Management, Thiruvalluvar University, TVU, Admissions 2026, Arcot College, Tamil Nadu, NAAC">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     ANNOUNCEMENT TICKER
+═══════════════════════════════════════════ -->
+<div class="ticker-bar">
+  <div class="container">
+    <div class="ticker-inner">
+      <div class="ticker-label">📢 <span data-i18n="announcements">Announcements</span></div>
+      <div class="ticker-track-wrap">
+        <div class="ticker-track" id="tickerTrack">
+          <a href="#" onclick="showPage('admissions')">🎓 Admissions Open 2026–27 — UG &amp; PG Programmes — Apply Now</a>
+          <a href="https://coe.tvu.edu.in/student_result/" target="_blank">📋 Apr–May 2026 Semester Exam Results Released — Click Here</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER — Logo | Building | TVU Logo
+═══════════════════════════════════════════ -->
+<header class="main-header">
+  <!-- Left: SSS College Logo -->
+  <div class="header-logo">
+    <img src="images/logo.jpg" alt="SSS College Logo" id="sssLogo" onclick="showPage('home')" style="cursor:pointer;">
+  </div>
+
+  <!-- Center: College Building Banner -->
+  <div class="header-building" onclick="showPage('home')" style="cursor:pointer;">
+    <img src="images/p_0001.jpg" alt="SSS College of Arts, Science &amp; Management — Arcot">
+    <div class="building-overlay-text">
+    </div>
+  </div>
+
+  <!-- Right: Thiruvalluvar University Logo -->
+  <div class="header-tvu-logo">
+    <a href="https://www.tvu.edu.in" target="_blank" title="Thiruvalluvar University">
+      <img src="images/media__1783432641215.jpeg" alt="Thiruvalluvar University Logo" id="tvuLogo">
+    </a>
+    
+  </div>
+
+
+  <!-- Mobile hamburger -->
+  <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     MAIN NAVIGATION
+═══════════════════════════════════════════ -->
+<nav class="main-nav">
+  <div class="nav-container">
+    <ul class="nav-list" id="navList">
+      <li>...</li>
+      <li><a href="#" onclick="showPage('home')" class="active" data-i18n="nav_home">Home</a></li>
+      <li>...</li>
+      <li>
+        <a href="#" onclick="showPage('about')"><span data-i18n="nav_about">About SSS</span> <span class="arrow">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="#" onclick="showPage('about')">🏛️ Overview</a>
+          <a href="#" onclick="showPage('about')">Chairman's Message</a>
+          <a href="#" onclick="showPage('about');setTimeout(()=>document.getElementById('trustees-section')?.scrollIntoView({behavior:'smooth'}),150)">Board of Trustees</a>
+         
+          <a href="#" onclick="showPage('gallery')">📸 Campus Gallery</a>
+        </div>
+      </li>
+      <li>...</li>
+      <li>
+        <a href="#" onclick="showPage('admissions')"><span data-i18n="nav_admissions">Admissions</span> <span class="arrow">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="#" onclick="showPage('admissions')">Admission Process</a>
+          <a href="#" onclick="showPage('admissions')">Fee Structure</a>
+          <a href="#" onclick="showPage('admissions')">Eligibility Criteria</a>
+          <a href="#" onclick="showPage('admissions')">Campus Facilities</a>
+        </div>
+      </li>
+      <li>...</li>
+      <li>
+        <a href="#" onclick="showPage('courses')"><span data-i18n="nav_academics">Academics</span> <span class="arrow">▾</span></a>
+        <div class="nav-mega">
+          <div>
+            <div class="mega-col-title">🎨 School of Arts</div>
+            <a href="#" onclick="showDept('ba-tamil')">B.A. Tamil</a>
+            <a href="#" onclick="showDept('bba')">B.B.A</a>
+            <a href="#" onclick="showDept('ba-defence')">B.A. Defence Studies</a>
+            <div class="mega-col-title" style="margin-top:12px">💰 Commerce</div>
+            <a href="#" onclick="showDept('bcom')">B.Com</a>
+            <a href="#" onclick="showDept('bcom-ca')">B.Com (Comp. Apps)</a>
+          </div>
+          <div>
+            <div class="mega-col-title">🔬 School of Science</div>
+            
+            <a href="#" onclick="showDept('bsc-chemistry')">B.Sc. Chemistry</a>
+            <a href="#" onclick="showDept('bsc-mathematics')"> Mathematics</a>
+            <a href="#" onclick="showDept('bsc-english')"> English</a>
+           
+          </div>
+          <div>
+            <div class="mega-col-title">💻 Science &amp; IT</div>
+            <a href="#" onclick="showDept('bsc-cs')">B.Sc. Computer Science</a>
+            <a href="#" onclick="showDept('bca')">B.C.A</a>
+            <a href="#" onclick="showDept('bsc-data-science')">B.Sc. Data Science</a>
+            <a href="#" onclick="showDept('bsc-ai')">B.Sc. Artificial Intelligence</a>
+            <div class="mega-col-title" style="margin-top:12px">📈 Management &amp; PG</div>
+            
+            <a href="#" onclick="showDept('msc-cs')">M.Sc. Computer Science</a>
+            <a href="#" onclick="showDept('mcom')">M.Com</a>
+          </div>
+          
+        </div>
+      </li>
+      <li>...</li>
+      
+      <li>
+        <a href="#" onclick="showPage('examinations')"><span data-i18n="nav_exams">Examinations</span> <span class="arrow">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="https://coe.tvu.edu.in/student_result/" target="_blank">Results (TVU COE)</a>
+          <a href="#" onclick="showPage('qpapers')">Question Papers</a>
+          <a href="#" onclick="showPage('class-notes')">📒 Class Notes</a>
+          <a href="https://www.tvu.edu.in/links/regulations-and-syllabus/" target="_blank">Regulations</a>
+        </div>
+      </li>
+      <li>...</li>
+      <li><a href="#" onclick="showPage('placements')" data-i18n="nav_placements">Placements</a></li>
+      <li>...</li>
+      <li>
+        <a href="#" onclick="showPage('gallery')"><span data-i18n="nav_gallery">Gallery</span> <span class="arrow">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="#" onclick="showPage('gallery')">📸 Photo Gallery</a>
+          <a href="#" onclick="showPage('news')">News &amp; Events</a>
+        </div>
+      </li>
+      <li>...</li>
+      <li><a href="#" onclick="showPage('contact')" data-i18n="nav_contact">Contact</a></li>
+      
+    </ul>
+    <div class="desktop-view-toggle" onclick="toggleDesktopView()">
+      <span id="desktopViewIcon">🖥️</span> <span id="desktopViewLabel" data-i18n="desktop_view_on">View Full Desktop Site</span>
+    </div>
+      <!-- Language Switcher -->
+  <div class="lang-switch" id="langSwitch">
+    <button class="lang-btn" onclick="toggleLangMenu()" id="langBtn" aria-label="Change language">🌐 <span id="langCurrent">EN</span> <span class="arrow">▾</span></button>
+    <div class="lang-menu" id="langMenu">
+      <a href="#" onclick="setLanguage('en');return false;">English</a>
+      <a href="#" onclick="setLanguage('ta');return false;">தமிழ் (Tamil)</a>
+      <a href="#" onclick="setLanguage('hi');return false;">हिन्दी (Hindi)</a>
+    
+    </div>
+  </div>
+
+    <!-- Quick Action Bar -->
+    <div class="nav-quick-bar">
+    
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform" target="_blank" class="quick-link apply">✏️ <span data-i18n="nav_apply">Apply Now</span></a>
+     
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     PAGES WRAPPER
+═══════════════════════════════════════════ -->
+
+<!-- ══ HOME PAGE ══ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('images/p_0001.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/p_0002.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/p_0003.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/p_0004.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🎓 <span data-i18n="hero_badge">Established 2005 · Affiliated to Thiruvalluvar University</span></div>
+     
+      <p class="hero-desc" data-i18n="hero_desc">Established in 2005 and affiliated to Thiruvalluvar University, Vellore — SSS College offers undergraduate and postgraduate degrees in Arts, Science, Commerce &amp; Management with experienced faculty and strong placement support.</p>
+      <div class="hero-stats" id="heroStats">
+        <div class="hero-stat"><span class="hero-stat-num" >1900+</span><span class="hero-stat-lbl" data-i18n="stat_students">Students</span></div>
+        <div class="hero-stat"><span class="hero-stat-num"  >13</span><span class="hero-stat-lbl" data-i18n="stat_programmes">Programmes</span></div>
+        <div class="hero-stat"><span class="hero-stat-num" id="statFaculty">52</span><span class="hero-stat-lbl" data-i18n="stat_faculty">Faculty</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">20+</span><span class="hero-stat-lbl" data-i18n="stat_years">Years</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform" target="_blank" class="btn-primary"><span data-i18n="hero_apply">Apply Now 2026–27</span> →</a>
+        <button onclick="showPage('courses')" class="btn-outline-white" data-i18n="hero_explore">Explore Programmes</button>
+      </div>
+    </div>
+    <div class="hero-slider-dots" id="heroSliderDots">
+      <span class="dot active" onclick="goSlide(0)"></span>
+      <span class="dot" onclick="goSlide(1)"></span>
+      <span class="dot" onclick="goSlide(2)"></span>
+      <span class="dot" onclick="goSlide(3)"></span>
+    </div>
+    <div class="hero-scroll-hint">↓ <span data-i18n="scroll_down">Scroll Down</span></div>
+  </section>
+
+  <!-- Announcements Section -->
+  <section class="announce-section" id="announcements">
+    <div class="container">
+      <div class="announce-left">
+        <div class="announce-header">
+          <div class="announce-icon">📢</div>
+          <div>
+            <div class="sec-label" style="margin:0;">Latest</div>
+            <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--navy);margin:0;">Announcements</h2>
+          </div>
+        </div>
+        <ul class="announce-list" id="announceList">
+          <li class="announce-item new"><span class="new-badge">NEW</span><a href="#" onclick="showPage('admissions')">Admissions Open 2026–27 — UG &amp; PG Programmes — Apply Now</a><span class="ann-date">Jul 2026</span></li>
+          <li class="announce-item new"><span class="new-badge">NEW</span><a href="https://coe.tvu.edu.in/student_result/" target="_blank">Apr–May 2026 Semester Exam Results Released</a><span class="ann-date">Jun 2026</span></li>
+          <li class="announce-item"><a href="#" onclick="showPage('qpapers')">Previous Year Question Papers Uploaded for All Departments</a><span class="ann-date">Jun 2026</span></li>
+          <li class="announce-item"><a href="#" onclick="showPage('placements')">Campus Placement Drive — , TVS — Registrations Open</a><span class="ann-date">May 2026</span></li>
+          <li class="announce-item"><a href="https://www.tvu.edu.in/examination/examination-time-table/" target="_blank">TVU Nov/Dec 2026 Exam Timetable Published</a><span class="ann-date">May 2026</span></li>
+          <li class="announce-item"><a href="#" onclick="showPage('admissions')">Fee Structure 2026–27 Updated — Merit Concessions Available</a><span class="ann-date">Apr 2026</span></li>
+          <li class="announce-item"><a href="#" onclick="showPage('gallery')">Virtual Campus Tour — New Photo Gallery Added</a><span class="ann-date">Apr 2026</span></li>
+        </ul>
+        <a href="#" onclick="showPage('examinations')" class="see-all-ann">View All Announcements →</a>
+      </div>
+      <div class="announce-right">
+        <div class="quick-links-box">
+          <div class="ql-title">⚡ Quick Access</div>
+          <a class="ql-item" href="https://coe.tvu.edu.in/student_result/" target="_blank"><span>📋</span><span>Exam Results</span><span>→</span></a>
+          <a class="ql-item" href="https://www.tvu.edu.in/examination/examination-time-table/" target="_blank"><span>🗓️</span><span>Timetable</span><span>→</span></a>
+          <a class="ql-item" href="#" onclick="showPage('qpapers')"><span>📄</span><span>Question Papers</span><span>→</span></a>
+          <a class="ql-item" href="#" onclick="showPage('staff')"><span>👨‍🏫</span><span>Staff Portal</span><span>→</span></a>
+          <a class="ql-item" href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform" target="_blank"><span>✏️</span><span>Apply Online</span><span>→</span></a>
+          <a class="ql-item" href="https://api.whatsapp.com/send?phone=918754711733" target="_blank"><span><i class="fab fa-whatsapp" style="color:#25D366;"></i></span><span>WhatsApp Us</span><span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VIDEO SECTION ═══ -->
+  <section class="video-section" id="videoSection">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:32px;">
+        <div class="sec-label">Campus Life</div>
+        <h2 class="sec-title">SSS College — <span>Virtual Campus Tour</span></h2>
+        <p style="color:var(--text-light);max-width:600px;margin:10px auto 0;font-size:14px;line-height:1.7;">
+          Experience the vibrant campus life at SSS College, Arcot — from state-of-the-art labs to cultural fests and placement drives.
+        </p>
+      </div>
+
+      <!-- ═══ NATIVE VIDEO PLAYER WRAP ═══ -->
+      <div class="campus-video-wrap" id="campusVideoWrap">
+
+        <!-- 🎬 HTML5 VIDEO — autoplay · muted · loop -->
+        <video
+          id="campusVideoEl"
+          class="campus-video-el"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="images/p_0001.jpg"
+          onerror="handleVideoError()"
+        >
+          <source src="videos/campus-tour.mp4" type="video/mp4">
+          <!-- Fallback if browser doesn't support video tag -->
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark gradient overlay on video -->
+        <div class="cvw-overlay"></div>
+
+       
+
+        <!-- Controls bottom-right -->
+        <div class="cvw-controls" id="cvwControls">
+          <button class="cvw-btn" id="cvwPlayPause" onclick="toggleVideoPlay()" title="Play/Pause">
+            <span id="cvwPlayIcon">⏸</span>
+          </button>
+          <button class="cvw-btn" id="cvwMuteBtn" onclick="toggleVideoMute()" title="Unmute">
+            🔇
+          </button>
+          <div class="cvw-label">Auto-playing · Muted</div>
+        </div>
+
+        <!-- No-video fallback overlay (shown only if video file is missing) -->
+        <div class="cvw-fallback" id="cvwFallback" style="display:none;">
+          <img src="images/p_0001.jpg" alt="SSS College" class="cvw-fallback-img">
+          <div class="cvw-fallback-info">
+            <div class="cvw-fallback-icon">🎬</div>
+            <div class="cvw-fallback-title">Campus Tour Video</div>
+            <div class="cvw-fallback-sub">Place <strong>campus-tour.mp4</strong> inside the <strong>videos/</strong> folder to enable autoplay</div>
+            <a href="https://www.instagram.com/reel/DZ87Y1ZvVMd/" target="_blank" class="btn-primary cvw-ig-link" style="margin-top:16px;display:inline-flex;gap:8px;align-items:center;">
+              📱 View on Instagram
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.campus-video-wrap -->
+
+      <div class="video-feature-row">
+        <div class="video-feature"><span>🏛️</span><span>Modern Campus</span></div>
+        <div class="video-feature"><span>💻</span><span>Computer Labs</span></div>
+        <div class="video-feature"><span>📚</span><span>Central Library</span></div>
+        <div class="video-feature"><span>⚽</span><span>Sports Facilities</span></div>
+        <div class="video-feature"><span>🏆</span><span>Placement Cell</span></div>
+        <div class="video-feature"><span>🎭</span><span>Cultural Events</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Snapshot -->
+  <section class="section alt" id="about-snap">
+    <div class="container">
+      <div class="grid-2" style="gap:48px;align-items:center;">
+        <div>
+          <div class="sec-label">About SSS College</div>
+          <h2 class="sec-title">Two Decades of <span>Academic Excellence</span></h2>
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:16px;">
+            SSS College of Arts, Science and Management, Arcot was established in 2005 and is affiliated to <strong>Thiruvalluvar University, Vellore</strong>. Spread over 5.11 acres in Arcot, Ranipet district, the college is a private, co-educational College, with 11 UG &amp; 2 PG programmes across Arts, Science, Commerce and Management.
+          </p>
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:24px;">
+            Thiruvalluvar University is a <strong>NAAC Accredited </strong>, UGC-approved university and A.I.U member. All programmes follow the University's CBCS syllabus.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item"><div class="fi-icon">✓</div><div><strong>Skill-Oriented Learning</strong><br><small>Spoken English, Tally, Soft Skills, Software Park visits</small></div></div>
+            <div class="feature-item"><div class="fi-icon">✓</div><div><strong>Strong Placement Support</strong><br><small>Campus drives with , TVS  — offer letters before course completion</small></div></div>
+            <div class="feature-item"><div class="fi-icon">✓</div><div><strong>Merit-Based Fee Concessions</strong><br><small>Up to 10% tuition concession + government scholarship schemes</small></div></div>
+          </div>
+          <button onclick="showPage('about')" class="btn-primary" style="margin-top:24px;">Read More About SSS →</button>
+        </div>
+        <div class="about-img-grid">
+          <img src="images/Gallery/Library.jpg" alt="SSS College Library" class="about-img ab1">
+          <img src="images/Gallery/Computer-lab.jpg" alt="Computer Lab" class="about-img ab2">
+          <img src="images/Gallery/Chemistry-lab.jpg" alt="Chemistry Lab" class="about-img ab3">
+          <img src="images/Gallery/play-ground.jpg" alt="Playground" class="about-img ab4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programmes Grid Preview -->
+  <section class="section" id="programmes-snap">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:36px;">
+        <div class="sec-label">Academics</div>
+        <h2 class="sec-title">Our <span>13 Programmes</span></h2>
+        <p style="color:var(--text-light);max-width:620px;margin:10px auto 0;">10 UG &amp; 2 PG programmes under Thiruvalluvar University's CBCS — combining strong academics with industry-relevant skills.</p>
+      </div>
+      <div class="dept-tabs">
+        <button class="dept-tab active" onclick="filterDepts('all',this)">All</button>
+        <button class="dept-tab" onclick="filterDepts('science',this)">Science &amp; IT</button>
+        <button class="dept-tab" onclick="filterDepts('commerce',this)">Commerce</button>
+        <button class="dept-tab" onclick="filterDepts('arts',this)">Arts</button>
+        <button class="dept-tab" onclick="filterDepts('pg',this)">PG</button>
+      </div>
+      <div class="dept-grid" id="homeDeptGrid"><!-- JS rendered --></div>
+      <div class="text-center" style="margin-top:32px;">
+        <button onclick="showPage('courses')" class="btn-primary">View All 13 Departments →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Strip -->
+  <section class="facilities-strip">
+    <div class="container">
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <img src="images/Gallery/Computer-lab.jpg" alt="Computer Lab">
+          <div class="facility-label">💻 Computer Lab</div>
+        </div>
+        <div class="facility-card">
+          <img src="images/Gallery/Chemistry-lab.jpg" alt="Chemistry Lab">
+          <div class="facility-label">🧪 Chemistry Lab</div>
+        </div>
+        <div class="facility-card">
+          <img src="images/Gallery/Library.jpg" alt="Library">
+          <div class="facility-label">📚 Central Library</div>
+        </div>
+        <div class="facility-card">
+          <img src="images/Gallery/play-ground.jpg" alt="Playground">
+          <div class="facility-label">⚽ Sports Ground</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events Snapshot -->
+  <section class="section alt" id="news-snap">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
+        <div>
+          <div class="sec-label">Campus Life</div>
+          <h2 class="sec-title">News &amp; <span>Events</span></h2>
+        </div>
+        <button onclick="showPage('news')" class="btn-outline">View All News →</button>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-img-wrap"><img src="images/Gallery/Sportsday.jpg" alt="Sports Day"></div>
+          <div class="news-body">
+            <div class="news-date">-</div>
+            <h3 class="news-title">Annual Sports Day 2026</h3>
+            <p class="news-desc">Students competed across Volleyball, Football, Hockey and Athletics. The event culminated with championship awards and a pyramid formation display.</p>
+            <button onclick="showPage('gallery')" class="news-link">View Gallery →</button>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-wrap"><img src="images/Gallery/Program4.jpg" alt="Placement Drive"></div>
+          <div class="news-body">
+            <div class="news-date">-</div>
+            <h3 class="news-title">Campus Placement Drive</h3>
+            <p class="news-desc">Our Placement Cell organised campus drives with TVS. Several students received appointment letters before completing their degree.</p>
+            <button onclick="showPage('placements')" class="news-link">Placement Details →</button>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-wrap"><img src="images/Gallery/Convocation.jpg" alt="Convocation"></div>
+          <div class="news-body">
+            <div class="news-date">-</div>
+            <h3 class="news-title">Convocation Day 2026</h3>
+            <p class="news-desc">Graduating students were honoured at our Convocation ceremony. We proudly announce a University 1st Rank holder from SSS College!</p>
+            <button onclick="showPage('gallery')" class="news-link">View Photos →</button>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-wrap"><img src="images/Gallery/Onam.jpg" alt="Onam"></div>
+          <div class="news-body">
+            <div class="news-date">-</div>
+            <h3 class="news-title">Onam Celebration 2025</h3>
+            <p class="news-desc">SSS College celebrated Onam with spectacular floral pookalam, cultural programmes, traditional games, folk dances and a festive feast.</p>
+            <button onclick="showPage('gallery')" class="news-link">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placements Strip -->
+  <section class="placement-strip">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:28px;">
+        <div class="sec-label white">Career Success</div>
+        <h2 class="sec-title white">Our Students Work At <span style="color:var(--gold)">Top Companies</span></h2>
+      </div>
+      <div class="company-logos-row" id="companyLogosRow"><!-- JS rendered --></div>
+      <div class="text-center" style="margin-top:28px;">
+        <button onclick="showPage('placements')" class="btn-outline-white">View Placement Details →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Snap -->
+  <section class="contact-snap">
+    <div class="container">
+      <div class="contact-snap-grid">
+        <div class="contact-snap-item">
+          <div class="csn-icon">📍</div>
+          <div class="csn-label">Address</div>
+          <div class="csn-val">#15, By-pass Road, NH 48, Arcot,<br>Tamil Nadu – 632 503</div>
+        </div>
+        <div class="contact-snap-item">
+          <div class="csn-icon">📞</div>
+          <div class="csn-label">Phone</div>
+          <div class="csn-val"><a href="tel:+919150122555">+91 91501 22555</a><br><a href="tel:+919894218555">+91 98942 18555</a></div>
+        </div>
+        <div class="contact-snap-item">
+          <div class="csn-icon">✉</div>
+          <div class="csn-label">Email</div>
+          <div class="csn-val"><a href="mailto:ssscareers@yahoo.co.in">ssscareers@yahoo.co.in</a></div>
+        </div>
+        <div class="contact-snap-item">
+          <div class="csn-icon">🕐</div>
+          <div class="csn-label">Office Hours</div>
+          <div class="csn-val">Mon–Fri: 9 AM – 5 PM<br>Saturday: 9 AM – 1 PM</div>
+        </div>
+        <div class="contact-snap-item">
+          <div class="csn-icon">💬</div>
+          <div class="csn-label">WhatsApp</div>
+          <div class="csn-val"><a href="https://api.whatsapp.com/send?phone=918754711733" target="_blank">+91 87547 11733<br>Chat with Admissions</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ══ ABOUT PAGE ══ -->
+<div class="page" id="page-about">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--navy),var(--navy-light));">
+    <div class="container">
+      <div class="sec-label gold">Our Institution</div>
+      <h1 class="sec-title white">About SSS <span style="color:var(--gold)">College</span></h1>
+      <p style="color:rgba(255,255,255,0.8);max-width:640px;">Established 2005 · Affiliated to Thiruvalluvar University · Co-Educational · Arcot, Ranipet District</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:48px;align-items:start;margin-bottom:60px;">
+        <div>
+          <div class="sec-label">Our Story</div>
+          <h2 class="sec-title">Two Decades of <span>Building Careers</span></h2>
+          <p style="color:var(--text-light);line-height:1.85;margin-bottom:14px;">SSS College of Arts, Science and Management, Arcot was established in 2005 and is affiliated to Thiruvalluvar University, Vellore. Spread over 5.11 acres in Arcot, Ranipet district, the college is a private, co-educational institution.</p>
+          <p style="color:var(--text-light);line-height:1.85;margin-bottom:14px;">With 13 UG &amp; PG programmes across Arts, Science, Commerce and Management, SSS College has produced thousands of graduates now working across India's top companies and government services.</p>
+          <p style="color:var(--text-light);line-height:1.85;">The college is affiliated to <strong>Thiruvalluvar University</strong> — a NAAC  accredited, UGC-approved university and A.I.U member, located at Serkkadu, Vellore – 632 115, Tamil Nadu.</p>
+        </div>
+        <div>
+          <img src="images/p_0001.jpg" alt="SSS College Building" style="width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
+            <div class="mini-stat-card"><div class="msc-num">2005</div><div class="msc-lbl">Year Founded</div></div>
+            <div class="mini-stat-card"><div class="msc-num">5.11</div><div class="msc-lbl">Acres Campus</div></div>
+            <div class="mini-stat-card"><div class="msc-num">13</div><div class="msc-lbl">Programmes</div></div>
+            <div class="mini-stat-card"><div class="msc-num">NAAC </div><div class="msc-lbl">TVU Affiliation</div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Chairman's Message -->
+      <div class="chairman-section">
+        <div class="chairman-photo-wrap">
+          <div class="chairman-initials"><img src="chairman.jpg" alt="chairman"></div>
+          <div class="chairman-label"> Chairman<br>SSS College, Arcot</div>
+        </div>
+        <div class="chairman-message">
+          <div class="sec-label">Leadership</div>
+          <h2 class="sec-title">Message from the <span>Chairman</span></h2>
+          <div class="chairman-quote"></div>
+          <p class="chairman-text">In the modern day, education is the prime necessity of every individual. With globalisation, multinational corporations — IBM, Wipro, Infosys, Accenture, TVS — along with research and marketing fields, actively seek out the best of the student community. Students must rise to meet the high expectations of such well-established organisations.</p>
+          <p class="chairman-text">Parents sow the seeds today to reap a bumper harvest in the future, and it is the duty of every student to fulfil the colourful dreams their parents hold for them.</p>
+          <p class="chairman-text" style="font-weight:700;color:var(--navy);font-style:italic;">"Take up an idea, make that one idea your life. Think of it, dream of it, work for it. You will attain the goal."</p>
+          <p class="chairman-text">I would like to renew our commitment to serve our students and to strive for excellence.</p>
+        </div>
+      </div>
+  <!-- Secretary & Principal -->
+   
+<div style="margin-top:60px;">
+  <div class="text-center" style="margin-bottom:36px;">
+    <div class="sec-label">Leadership</div>
+    <h2 class="sec-title">Secretary &amp; <span>Principal</span></h2>
+  </div>
+        <!-- Chairman's Message -->
+      <div class="chairman-section">
+        <div class="chairman-photo-wrap">
+          <div class="chairman-initials"><img src="images/staff/Secretary.jpeg" alt="Leadership"></div>
+          <div class="chairman-label"> <h2><span>Thiru. A. N sankar</span></h2><br>M.E., M.B.A., M.Sc. (IT)<br>Secretary<br>SSS College, Arcot</div>
+        </div>
+        <div class="chairman-message">
+          <div class="sec-label"></div>
+          <h2 class="sec-title">Message from the <span> Secretary</span></h2>
+          <div class="chairman-quote"></div>
+          <p class="chairman-text">Dear Students, Parents, Faculty Members, and Visitors,Education is the foundation of personal growth and national development. <br> At our institution, we are committed to providing quality education that fosters academic excellence, practical skills, ethical values, creativity, and leadership. <br> Supported by dedicated faculty, modern infrastructure, and a vibrant learning environment, we prepare students to meet the challenges of a rapidly evolving world with confidence and integrity.<br>
+
+We encourage our students to excel both academically and personally through active participation in co-curricular and community activities. <br>I invite you to explore our website to learn more about our academic programs, facilities, achievements, and student life.<br>
+
+I extend my best wishes to all our students for a successful academic journey and a bright future.
+
+
+<br>
+
+<br>
+</p>
+          
+        </div>
+      </div>
+
+ <br><br><br><br>
+
+
+          <!-- Chairman's Message -->
+      <div class="chairman-section">
+        <div class="chairman-photo-wrap">
+          <div class="chairman-initials"><img src="images/staff/principal.png" alt="Principal"></div>
+          <div class="chairman-label"><h2>Dr. G. Rajalakshmi</h2><br>M.Sc,M.Phil,Ph.D.<br>Principal<br>SSS College, Arcot</div>
+        </div>
+        <div class="chairman-message">
+          <div class="sec-label">Leadership</div>
+          <h2 class="sec-title">Message from the <span>Principal</span></h2>
+          <div class="chairman-quote"></div>
+          <p class="chairman-text"><Dear Students, Parents, Faculty Members, Alumni, and Visitors,It is my pleasure to welcome you to SSS College of Arts, Science and Management.<br>Our college is committed to providing quality education that nurtures knowledge, values, leadership, and lifelong learning. With experienced faculty, modern facilities, and a student-centered approach, we strive to prepare our students for successful careers and responsible citizenship.We encourage academic excellence, innovation, discipline, and holistic development through academics, research, cultural activities, sports, and community service.<br>
+I invite you to explore our website and learn more about our academic programs, campus facilities, and student achievements.<br>
+I wish all our students a successful academic journey and a bright future.<br>
+</p>
+
+          
+        </div>
+      </div>
+
+
+
+  </div>
+</div>
+      <!-- Board of Trustees -->
+      <div style="margin-top:60px;" id="trustees-section">
+        <div class="text-center" style="margin-bottom:36px;">
+          <div class="sec-label" data-i18n="governance">Governance</div>
+          <h2 class="sec-title"><span data-i18n="board_of">Board of</span> <span data-i18n="trustees">Trustees</span></h2>
+        </div>
+        <div class="features-grid" id="trusteesGrid">
+          <div class="feature-card"><div class="fc-icon">👤</div><h3>Mr. A.K. Natarajan</h3><p>Trustee</p></div>
+         
+          <div class="feature-card"><div class="fc-icon">👤</div><h3>Mr. A.N. Saravanan</h3><p>B.A., D.C.S. &nbsp;·&nbsp; Trustee</p></div>
+          <div class="feature-card"><div class="fc-icon">👤</div><h3>Mr. A.N. Selvam</h3><p>M.Com. &nbsp;·&nbsp; Trustee</p></div>
+        </div>
+      </div>
+      <!-- Salient Features -->
+      <div style="margin-top:60px;">
+        <div class="text-center" style="margin-bottom:36px;">
+          <div class="sec-label">Why Choose Us</div>
+          <h2 class="sec-title">Salient <span>Features</span></h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card"><div class="fc-icon">📚</div><h3>CBCS Curriculum</h3><p>Choice Based Credit System with skill-oriented electives, ensuring graduates are industry-ready.</p></div>
+          <div class="feature-card"><div class="fc-icon">🏆</div><h3>Strong Placement Support</h3><p>Campus drives with TVS. Students received offer letters before completing their degree.</p></div>
+          <div class="feature-card"><div class="fc-icon">💰</div><h3>Merit Fee Concessions</h3><p>Up to 10% concession for +2 toppers, plus government scholarship schemes for eligible students.</p></div>
+          <div class="feature-card"><div class="fc-icon">🚌</div><h3>Campus Transport</h3><p>15 buses covering Katpadi, Vellore, Ranipet, Walaja, Sholinghur and surrounding areas.</p></div>
+          <div class="feature-card"><div class="fc-icon">🔬</div><h3>Well-Equipped Labs</h3><p>Computer, Chemistry, Physics and Biotechnology labs with modern instruments and equipment.</p></div>
+          <div class="feature-card"><div class="fc-icon">📖</div><h3>Central Library</h3><p>Comprehensive library with thousands of books, journals and e-resources across all departments.</p></div>
+          <div class="feature-card"><div class="fc-icon">⚽</div><h3>Sports Facilities</h3><p>Ground and courts for Volleyball, Football, Cricket, Basketball, Kabaddi, Athletics and more.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+<!-- ══ COURSES / DEPARTMENTS PAGE ══ -->
+<div class="page" id="page-courses">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--navy),var(--red-dark));">
+    <div class="container">
+      <div class="sec-label gold">Academics</div>
+      <h1 class="sec-title white">Our <span style="color:var(--gold)">13 Programmes</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">All programmes affiliated to Thiruvalluvar University under CBCS — combining strong academics with industry-relevant skills.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="dept-tabs">
+        <button class="dept-tab active" onclick="filterCourseDepts('all',this)">All Departments</button>
+        <button class="dept-tab" onclick="filterCourseDepts('science',this)">Science &amp; IT</button>
+        <button class="dept-tab" onclick="filterCourseDepts('commerce',this)">Commerce</button>
+        <button class="dept-tab" onclick="filterCourseDepts('arts',this)">Arts</button>
+        <button class="dept-tab" onclick="filterCourseDepts('pg',this)">PG</button>
+      </div>
+      <div class="dept-grid" id="fullDeptGrid"><!-- JS rendered --></div>
+    </div>
+  </section>
+</div><!-- /page-courses -->
+
+<!-- ══ DEPARTMENT DETAIL PAGE ══ -->
+<div class="page" id="page-dept-detail">
+  <div id="deptDetailContent"><!-- JS rendered --></div>
+</div>
+
+<!-- ══ FACULTY PAGE ══ -->
+<div class="page" id="page-faculty">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--navy),var(--navy-light));">
+    <div class="container">
+      <div class="sec-label gold">Our Team</div>
+      <h1 class="sec-title white">Faculty &amp; <span style="color:var(--gold)">Staff Directory</span></h1>
+      <p style="color:rgba(255,255,255,0.8);max-width:650px;">Meet our dedicated team of 52+ qualified faculty members across 12 departments — committed to academic excellence and student success.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="faculty-stats-bar">
+        <div class="fac-stat"><div class="fac-stat-num">52+</div><div class="fac-stat-lbl">Total Faculty</div></div>
+        <div class="fac-stat"><div class="fac-stat-num">12</div><div class="fac-stat-lbl">HODs</div></div>
+        <div class="fac-stat"><div class="fac-stat-num">38+</div><div class="fac-stat-lbl">M.Phil / Ph.D Holders</div></div>
+        <div class="fac-stat"><div class="fac-stat-num">12+</div><div class="fac-stat-lbl">Avg. Experience (Yrs)</div></div>
+      </div>
+      <div class="faculty-dept-filter">
+        <select id="facDeptFilter" onchange="filterFaculty()">
+          <option value="">All Departments</option>
+          <option value="bsc-cs">B.Sc Computer Science</option>
+          <option value="bca">B.C.A</option>
+          <option value="bsc-data-science">B.Sc Data Science</option>
+          <option value="bsc-ai">B.Sc Artificial Intelligence</option>
+          <option value="bsc-mathematics">Mathematics</option>
+          <option value="bsc-chemistry">B.Sc Chemistry</option>
+          <option value="bcom">B.Com</option>
+          <option value="bcom-ca">B.Com (CA)</option>
+          <option value="bba">B.B.A</option>
+          <option value="ba-tamil">B.A. Tamil</option>
+          <option value="ba-defence">B.A. Defence Studies</option>
+          <option value="msc-cs">M.Sc Computer Science</option>
+          <option value="mcom">M.Com</option>
+        </select>
+        <select id="facDesigFilter" onchange="filterFaculty()">
+          <option value="">All Designations</option>
+          <option value="HOD">Head of Department</option>
+          <option value="Professor">Professor</option>
+          <option value="Assistant Professor">Assistant Professor</option>
+          <option value="Guest Faculty">Guest Faculty</option>
+        </select>
+        <input type="text" id="facSearch" placeholder="🔍 Search by name or specialization..." oninput="filterFaculty()">
+      </div>
+      <div class="faculty-results-info" id="facResultsInfo">
+        <span>Showing <strong id="facCount">52</strong> faculty members</span>
+        <button onclick="resetFacFilter()" style="background:var(--red);color:#fff;border:none;padding:6px 14px;border-radius:5px;font-size:12px;font-weight:700;cursor:pointer;">Reset Filters</button>
+      </div>
+      <div id="facultyGroupsContainer"><!-- JS rendered --></div>
+    </div>
+  </section>
+</div><!-- /page-faculty -->
+
+<!-- ══ ADMISSIONS PAGE ══ -->
+<div class="page" id="page-admissions">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--red-dark),var(--red));">
+    <div class="container">
+      <div class="sec-label gold">Join Us</div>
+      <h1 class="sec-title white">Admissions <span style="color:var(--gold)">2026–27</span></h1>
+      <p style="color:rgba(255,255,255,0.85);">A simple, student-friendly admission process for all UG &amp; PG programmes at SSS College, Arcot.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <!-- Process Steps -->
+      <div class="text-center" style="margin-bottom:36px;"><div class="sec-label">How to Apply</div><h2 class="sec-title">Admission <span>Process</span></h2></div>
+      <div class="process-steps">
+        <div class="process-step"><div class="ps-num">1</div><h3>Choose Programme</h3><p>Browse our 12 UG &amp; PG programmes and shortlist the course matching your interests and career goals.</p></div>
+        <div class="process-arrow">→</div>
+        <div class="process-step"><div class="ps-num">2</div><h3>Check Eligibility</h3><p>Confirm you meet the eligibility criteria for your chosen UG or PG programme (see below).</p></div>
+        <div class="process-arrow">→</div>
+        <div class="process-step"><div class="ps-num">3</div><h3>Fill Application</h3><p>Fill the online enquiry form, or collect a physical form from the admissions office.</p></div>
+        <div class="process-arrow">→</div>
+        <div class="process-step"><div class="ps-num">4</div><h3>Submit Documents</h3><p>Submit with T.C., mark sheets, 2 community certificate copies, and 2 passport-size photos.</p></div>
+        <div class="process-arrow">→</div>
+        <div class="process-step"><div class="ps-num">5</div><h3>Pay Fee &amp; Confirm</h3><p>Pay admission fee + University Special Fee (₹1,500 UG / ₹2,000 PG) and get your admission.</p></div>
+      </div>
+      <div class="text-center" style="margin:32px 0;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform" target="_blank" class="btn-primary" style="font-size:15px;padding:14px 32px;">Fill Online Enquiry Form →</a>
+      </div>
+      <!-- Eligibility -->
+      <div class="eligibility-grid">
+        <div class="elig-card"><h3>🎓 UG Eligibility</h3><p>A pass in the +2 examination conducted by the Government of Tamil Nadu, or an equivalent examination from other State Boards.</p></div>
+        <div class="elig-card"><h3>🎓 PG Eligibility</h3><p>A pass in any UG degree with Mathematics, Statistics, or Computer Science as one of the subjects studied (for M.Sc CS and M.Com).</p></div>
+        <div class="elig-card"><h3>💰 Fee Concessions</h3><ul><li>+2 marks 600: <strong>10% off</strong> per semester</li><li>SC/ST, Farmer, Minority scholarships available</li><li>Pudumai Pen &amp; Tamil Pudhalvan schemes</li></ul></div>
+        <div class="elig-card"><h3>📄 Documents Required</h3><ul><li>Original Transfer Certificate (T.C.)</li><li>Original mark sheets (+2 or UG)</li><li>2 copies of community certificate</li><li>2 recent passport-size photographs</li></ul></div>
+      </div>
+      <!-- Fee Table -->
+      <div style="margin-top:60px;">
+        <div class="text-center" style="margin-bottom:28px;"><div class="sec-label">2026–27</div><h2 class="sec-title">Fee <span>Structure</span></h2><p style="color:var(--text-light);font-size:13px;">Per-semester tuition fees (Day College). One-time University &amp; Special Fee: ₹1,500 (UG) / ₹2,000 (PG) at admission.</p></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Programme</th><th>Category</th><th>Duration</th><th>Semester Fee</th></tr></thead>
+            <tbody id="feesTableBody"><!-- JS rendered --></tbody>
+          </table>
+        </div>
+        <div style="margin-top:16px;padding:14px 18px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);font-size:12.5px;color:var(--text-light);">
+          🚌 <strong>College Transport:</strong> 15 buses covering Katpadi, Bagayam, Vellore, R.K.Pet, Sholinghur, Walaja, Ammaiyarkuppam, Ponnai, Thiruvallam, BHEL, Ranipet and more. Bus fees paid twice a year.
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-admissions -->
+
+<!-- ══ EXAMINATIONS PAGE ══ -->
+<div class="page" id="page-examinations">
+  <div class="page-hero" style="background:linear-gradient(135deg,#1a3a7a,#0a2060);">
+    <div class="container">
+      <div class="sec-label gold">Academic Calendar</div>
+      <h1 class="sec-title white">Examinations &amp; <span style="color:var(--gold)">Results</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">All examinations conducted by the Controller of Examinations, Thiruvalluvar University, Serkkadu, Vellore.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="exam-cards">
+        <a href="https://coe.tvu.edu.in/student_result/" target="_blank" class="exam-card"><div class="ec-icon">📋</div><h3>Semester Results</h3><p>Check your semester examination results on the TVU Controller of Examinations portal using your Register Number.</p><span class="ec-link">Visit COE TVU Portal →</span></a>
+        <a href="https://www.tvu.edu.in/examination/examination-time-table/" target="_blank" class="exam-card"><div class="ec-icon">🗓️</div><h3>Exam Timetable</h3><p>Download the official University examination timetable for Nov/Dec 2026 and Apr/May 2027 sessions.</p><span class="ec-link">Download Timetable →</span></a>
+        <a href="#" onclick="showPage('qpapers')" class="exam-card"><div class="ec-icon">📄</div><h3>Question Papers</h3><p>Download previous year question papers for all 12 departments — TVU CBCS pattern, all semesters.</p><span class="ec-link">View Question Papers →</span></a>
+        <a href="https://www.tvu.edu.in/links/regulations-and-syllabus/" target="_blank" class="exam-card"><div class="ec-icon">📖</div><h3>Regulations &amp; Syllabus</h3><p>Download TVU CBCS regulations and department-wise syllabus for all UG &amp; PG programmes.</p><span class="ec-link">TVU Regulations →</span></a>
+      </div>
+      <div style="margin-top:48px;padding:28px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius-lg);">
+        <h3 style="color:var(--navy);font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:16px;">📌 Important Exam Information</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+          <div style="padding:14px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);"><strong style="color:var(--red);">COE Portal:</strong><br><a href="https://coe.tvu.edu.in" target="_blank" style="color:var(--navy);">coe.tvu.edu.in</a></div>
+          <div style="padding:14px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);"><strong style="color:var(--red);">University:</strong><br>Thiruvalluvar University, Vellore – 632 115</div>
+          <div style="padding:14px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);"><strong style="color:var(--red);">Pattern:</strong><br>CBCS — Internal (25) + University (75)</div>
+          <div style="padding:14px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);"><strong style="color:var(--red);">Sessions:</strong><br>Nov/Dec and Apr/May every year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-examinations -->
+
+<!-- ══ CLASS NOTES PAGE (STUDENT VIEW) ══ -->
+<div class="page" id="page-class-notes">
+  <div class="page-hero cn-hero">
+    <div class="container">
+      <div class="sec-label gold">Study Material</div>
+      <h1 class="sec-title white">Class <span style="color:var(--gold)">Notes</span></h1>
+      <p class="cn-hero-desc">Browse lecture notes, assignments, formula sheets and reference material uploaded by faculty across every department.</p>
+    </div>
+  </div>
+  
+
+      <div class="cn-stats">
+        <div class="cn-stat"><span id="cnStatTotal">0</span><small>Total Notes</small></div>
+        <div class="cn-stat"><span id="cnStatDepts">0</span><small>Departments Covered</small></div>
+        <div class="cn-stat"><span id="cnStatToday">0</span><small>Added Today</small></div>
+      </div>
+
+      <div class="cn-filter-bar">
+        <div class="cn-filter-group">
+          <label>Department</label>
+          <select id="cnDeptFilter" onchange="filterPdfNotes()">
+            <option value="">All Departments</option>
+            <option value="bsc-cs">B.Sc Computer Science</option>
+            <option value="bca">B.C.A</option>
+            <option value="bsc-data-science">B.Sc Data Science</option>
+            <option value="bsc-ai">B.Sc Artificial Intelligence</option>
+            <option value="bsc-mathematics">Mathematics</option>
+            <option value="bsc-chemistry">B.Sc Chemistry</option>
+            <option value="bcom">B.Com</option>
+            <option value="bcom-ca">B.Com (CA)</option>
+            <option value="bba">B.B.A</option>
+            <option value="ba-tamil">B.A. Tamil</option>
+            <option value="ba-defence">B.A. Defence Studies</option>
+            <option value="msc-cs">M.Sc Computer Science</option>
+            <option value="mcom">M.Com</option>
+          </select>
+        </div>
+        <div class="cn-filter-group">
+          <label>Year</label>
+          <select id="cnYearFilter" onchange="filterPdfNotes()">
+            <option value="">All Years</option>
+            <option value="I">Year I</option>
+            <option value="II">Year II</option>
+            <option value="III">Year III</option>
+          </select>
+        </div>
+        <div class="cn-filter-group">
+          <label>Semester</label>
+          <select id="cnSemFilter" onchange="filterPdfNotes()">
+            <option value="">All Semesters</option>
+            <option value="I">Sem I</option><option value="II">Sem II</option>
+            <option value="III">Sem III</option><option value="IV">Sem IV</option>
+            <option value="V">Sem V</option><option value="VI">Sem VI</option>
+          </select>
+        </div>
+        <div class="cn-filter-group">
+          <label>Type</label>
+          <select id="cnTypeFilter" onchange="filterPdfNotes()">
+            <option value="">All Types</option>
+            <option value="Lecture Notes">Lecture Notes</option>
+            <option value="Assignment">Assignment</option>
+            <option value="Important Q&amp;A">Important Q&amp;A</option>
+            <option value="Formula Sheet">Formula Sheet</option>
+            <option value="Reference">Reference</option>
+          </select>
+        </div>
+        <div class="cn-filter-group">
+          <label>Search</label>
+          <input type="text" id="cnSearch" placeholder="Search title, subject, topic…" oninput="filterPdfNotes()">
+        </div>
+        <div class="cn-filter-group">
+          <label>Date Added</label>
+          <select id="cnDateFilter" onchange="filterPdfNotes()">
+            <option value="">All Time</option>
+            <option value="today">Today</option>
+            <option value="week">This Week</option>
+            <option value="month">This Month</option>
+          </select>
+        </div>
+        <div class="cn-filter-group">
+          <label>Sort By</label>
+          <select id="cnSortFilter" onchange="filterPdfNotes()">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="subject">Subject A–Z</option>
+          </select>
+        </div>
+        <button class="cn-reset-btn" onclick="resetPdfNotesFilter()">↺ Reset</button>
+      </div>
+
+      <div class="cn-result-bar">
+        <span id="cnResultCount">Showing 0 notes</span>
+      </div>
+
+      <div class="cn-grid" id="cnGrid"><!-- JS rendered --></div>
+      <div class="cn-empty" id="cnEmpty" style="display:none;">
+        <div class="cn-empty-icon">📭</div>
+        <h3>No Notes Found</h3>
+        <p>Try adjusting your filters, or check back later — faculty regularly upload new notes here.</p>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-class-notes -->
+
+<!-- NOTE DETAIL MODAL -->
+<div class="note-modal-overlay" id="noteModalOverlay" onclick="closeNoteModal(event)">
+  <div class="note-modal">
+    <div id="noteModalHeader"></div>
+    <div class="nm-body" id="noteModalBody"></div>
+    <div class="nm-footer" id="noteModalFooter"></div>
+  </div>
+</div>
+
+<!-- ══ QUESTION PAPERS PAGE ══ -->
+<div class="page" id="page-qpapers">
+  <div class="page-hero" style="background:linear-gradient(135deg,#2a1a6a,#1a0a4a);">
+    <div class="container">
+      <div class="sec-label gold">Exam Resources</div>
+      <h1 class="sec-title white">Previous Year <span style="color:var(--gold)">Question Papers</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">Download past exam papers for all SSS College programmes — Thiruvalluvar University (TVU) CBCS pattern.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="qpapers-controls">
+        <select id="qpDeptFilter" onchange="filterQPapers()"><option value="">All Departments</option><option value="bsc-cs">B.Sc Computer Science</option><option value="bca">B.C.A</option><option value="bsc-data-science">B.Sc Data Science</option><option value="bsc-ai">B.Sc Artificial Intelligence</option><option value="bsc-mathematics">Mathematics</option><option value="bsc-chemistry">B.Sc Chemistry</option><option value="bcom">B.Com</option><option value="bcom-ca">B.Com (CA)</option><option value="bba">B.B.A</option><option value="ba-tamil">B.A. Tamil</option><option value="ba-defence">B.A. Defence Studies</option><option value="msc-cs">M.Sc Computer Science</option><option value="mcom">M.Com</option></select>
+        <select id="qpYearFilter" onchange="filterQPapers()"><option value="">All Years</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option></select>
+        <select id="qpSemFilter" onchange="filterQPapers()"><option value="">All Semesters</option><option value="I">Sem I</option><option value="II">Sem II</option><option value="III">Sem III</option><option value="IV">Sem IV</option><option value="V">Sem V</option><option value="VI">Sem VI</option></select>
+        <select id="qpDegreeFilter" onchange="filterQPapers()"><option value="">UG &amp; PG</option><option value="UG">UG Only</option><option value="PG">PG Only</option></select>
+        <button onclick="resetQPFilters()" class="btn-outline">Reset</button>
+      </div>
+      <div style="margin-bottom:16px;font-size:13px;color:var(--text-light);">Showing <strong id="qpCount">0</strong> question papers · <a href="https://www.tvu.edu.in" target="_blank" style="color:var(--red);">Visit TVU for more →</a></div>
+      <div class="table-wrap">
+        <table class="data-table qp-table">
+          <thead><tr><th>#</th><th>Department</th><th>Subject</th><th>Code</th><th>Year / Month</th><th>Semester</th><th>Regulation</th><th>Download</th></tr></thead>
+          <tbody id="qpTableBody"><!-- JS rendered --></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-qpapers -->
+
+<!-- ══ PLACEMENTS PAGE ══ -->
+<div class="page" id="page-placements">
+  <div class="page-hero" style="background:linear-gradient(135deg,#1a5a1a,#0a3a0a);">
+    <div class="container">
+      <div class="sec-label gold">Career Success</div>
+      <h1 class="sec-title white">Placements &amp; <span style="color:var(--gold)">Careers</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">SSS College equips students with Soft Skills, Spoken English, Tally Certification, and Software Technology Park visits — aligning with TVU's focus on industry-ready graduates.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="placement-stats">
+        <div class="pstat"><div class="pstat-num">350+</div><div class="pstat-lbl">Students Placed</div></div>
+        <div class="pstat"><div class="pstat-num">₹6.2L</div><div class="pstat-lbl">Highest Package</div></div>
+        <div class="pstat"><div class="pstat-num">₹3.4L</div><div class="pstat-lbl">Average Package</div></div>
+        <div class="pstat"><div class="pstat-num">12+</div><div class="pstat-lbl">Recruiting Companies</div></div>
+      </div>
+      <div style="margin-top:48px;">
+        <div class="text-center" style="margin-bottom:28px;"><div class="sec-label">Our Recruiters</div><h2 class="sec-title">Companies That <span>Hire From Us</span></h2></div>
+        <div class="companies-grid" id="companiesGrid"><!-- JS rendered --></div>
+      </div>
+      <div style="margin-top:60px;">
+        <div class="text-center" style="margin-bottom:28px;"><div class="sec-label">Success Stories</div><h2 class="sec-title">Student <span>Testimonials</span></h2></div>
+        <div class="testimonials-grid" id="testimonialsGrid"><!-- JS rendered --></div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-placements -->
+
+<!-- ══ GALLERY PAGE ══ -->
+<div class="page" id="page-gallery">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--red-dark),#3a0a1a);">
+    <div class="container">
+      <div class="sec-label gold">Campus Life</div>
+      <h1 class="sec-title white">Photo <span style="color:var(--gold)">Gallery</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">Real moments from our vibrant campus — events, sports, celebrations and facilities.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" onclick="filterGallery('all',this)">All</button>
+        <button class="gallery-tab" onclick="filterGallery('events',this)">Cultural Events</button>
+        <button class="gallery-tab" onclick="filterGallery('sports',this)">Sports</button>
+        <button class="gallery-tab" onclick="filterGallery('facilities',this)">Facilities</button>
+        <button class="gallery-tab" onclick="filterGallery('celebrations',this)">Celebrations</button>
+        <button class="gallery-tab" onclick="filterGallery('annual',this)">Annual</button>
+   
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Cultural.jpg" alt="Cultural Event" onclick="openLightbox(this)"><div class="gallery-cap">Cultural Programme</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Program.jpg" alt="Programme" onclick="openLightbox(this)"><div class="gallery-cap">Annual Day Programme</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Program1.jpg" alt="Programme 1" onclick="openLightbox(this)"><div class="gallery-cap">Cultural Performance</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Program2.jpg" alt="Programme 2" onclick="openLightbox(this)"><div class="gallery-cap">College Day 2025</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Program3.jpg" alt="Programme 3" onclick="openLightbox(this)"><div class="gallery-cap">Stage Performance</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Program4.jpg" alt="Programme 4" onclick="openLightbox(this)"><div class="gallery-cap">Campus Event</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Cultural-1.jpg" alt="Cultural" onclick="openLightbox(this)"><div class="gallery-cap">Cultural Activities</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Cultural2.jpg" alt="Cultural 2" onclick="openLightbox(this)"><div class="gallery-cap">Fine Arts Competition</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Collegeday.jpg" alt="College Day" onclick="openLightbox(this)"><div class="gallery-cap">College Day Celebration</div></div>
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Sportsday.jpg" alt="Sports Day" onclick="openLightbox(this)"><div class="gallery-cap">Annual Sports Day</div></div>
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Sportsday1.jpg" alt="Sports Day 1" onclick="openLightbox(this)"><div class="gallery-cap">Sports Day 2025</div></div>
+        <div class="gallery-item" data-cat="annual"><img src="images/Gallery/annual-day.jpeg" alt="Annual Day" onclick="openLightbox(this)"><div class="gallery-cap">Annual Day</div></div>
+
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Sportsday2.jpg" alt="Sports Day 2" onclick="openLightbox(this)"><div class="gallery-cap">Athletics Meet</div></div>
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Olympic.jpg" alt="Olympic Event" onclick="openLightbox(this)"><div class="gallery-cap">Olympic Day</div></div>
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Karate.jpg" alt="Karate" onclick="openLightbox(this)"><div class="gallery-cap">Karate Championship</div></div>
+        <div class="gallery-item" data-cat="sports"><img src="images/Gallery/Youth-festival.jpg" alt="Youth Festival" onclick="openLightbox(this)"><div class="gallery-cap">Youth Festival</div></div>
+        <div class="gallery-item" data-cat="facilities"><img src="images/Gallery/Library.jpg" alt="Library" onclick="openLightbox(this)"><div class="gallery-cap">Central Library</div></div>
+        <div class="gallery-item" data-cat="facilities"><img src="images/Gallery/Computer-lab.jpg" alt="Computer Lab" onclick="openLightbox(this)"><div class="gallery-cap">Computer Laboratory</div></div>
+        <div class="gallery-item" data-cat="facilities"><img src="images/Gallery/Chemistry-lab.jpg" alt="Chemistry Lab" onclick="openLightbox(this)"><div class="gallery-cap">Chemistry Laboratory</div></div>
+        <div class="gallery-item" data-cat="facilities"><img src="images/Gallery/play-ground.jpg" alt="Playground" onclick="openLightbox(this)"><div class="gallery-cap">Sports Ground</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Onam.jpg" alt="Onam" onclick="openLightbox(this)"><div class="gallery-cap">Onam Celebration</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Onam1.jpg" alt="Onam 1" onclick="openLightbox(this)"><div class="gallery-cap">Onam Pookalam</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Onam2.jpg" alt="Onam 2" onclick="openLightbox(this)"><div class="gallery-cap">Onam Festivities</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Pongal.jpg" alt="Pongal" onclick="openLightbox(this)"><div class="gallery-cap">Pongal Celebration</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Deepali.jpg" alt="Deepavali" onclick="openLightbox(this)"><div class="gallery-cap">Deepavali Celebration</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Convocation.jpg" alt="Convocation" onclick="openLightbox(this)"><div class="gallery-cap">Convocation Day</div></div>
+        <div class="gallery-item" data-cat="celebrations"><img src="images/Gallery/Graduation-day.jpg" alt="Graduation" onclick="openLightbox(this)"><div class="gallery-cap">Graduation Day</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/Youth-day.jpg" alt="Youth Day" onclick="openLightbox(this)"><div class="gallery-cap">National Youth Day</div></div>
+        <div class="gallery-item" data-cat="events"><img src="images/Gallery/social.jpg" alt="Social" onclick="openLightbox(this)"><div class="gallery-cap">NSS Social Camp</div></div>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:13px;color:var(--text-light);">Follow <a href="https://www.instagram.com/sss_campus_diaries" target="_blank" style="color:var(--red);font-weight:700;">@sss_campus_diaries</a> on Instagram for the latest campus moments.</p>
+    </div>
+  </section>
+</div><!-- /page-gallery -->
+
+<!-- ══ NEWS PAGE ══ -->
+<div class="page" id="page-news">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--navy),var(--red-dark));">
+    <div class="container">
+      <div class="sec-label gold">Campus Life</div>
+      <h1 class="sec-title white">News &amp; <span style="color:var(--gold)">Events</span></h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="news-grid news-grid-full">
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Sportsday.jpg" alt="Sports Day"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Annual Sports Day </h3><p class="news-desc">Students competed across Volleyball, Football, Hockey and Athletics. The event culminated with championship awards and an inspiring pyramid formation display by the physical education students.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Program4.jpg" alt="Placement"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Campus Placement Drive </h3><p class="news-desc">Our Placement Cell organised campus drives with TVS. Several students received appointment letters before completing their final semester.</p><button onclick="showPage('placements')" class="news-link">Placement Details →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Cultural.jpg" alt="Annual Day"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Annual Day &amp; College Day </h3><p class="news-desc">The Annual Day and College Day celebrations were marked by vibrant cultural performances — music, dance, drama and a grand prize-giving ceremony.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Convocation.jpg" alt="Convocation"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Convocation &amp; University Rank</h3><p class="news-desc">SSS College students were honoured at Thiruvalluvar University's Convocation ceremony. We proudly announce a University 1st Rank holder!</p><button onclick="showPage('gallery')" class="news-link">View Photos →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Onam.jpg" alt="Onam"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Onam Celebration </h3><p class="news-desc">SSS College celebrated Onam with spectacular floral pookalam and cultural programmes. Students participated in traditional games, folk dances and a festive feast.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Karate.jpg" alt="Karate"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Inter-College Karate Championship</h3><p class="news-desc">SSS College students participated in inter-college Karate championships, bringing home medals. Our physical education department continues to produce state-level athletes.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Youth-day.jpg" alt="Youth Day"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">National Youth Day </h3><p class="news-desc">National Youth Day was observed with great enthusiasm — featuring speeches, essay competitions and talks on Swami Vivekananda's life and teachings.</p><button onclick="showPage('gallery')" class="news-link">View Photos →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Pongal.jpg" alt="Pongal"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Pongal Celebration </h3><p class="news-desc">Pongal was celebrated with traditional rituals, kolam art, sugarcane and the boiling of the sacred Pongal pot. The festival united the entire campus community.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/social.jpg" alt="NSS"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">NSS Special Camp</h3><p class="news-desc">Our NSS unit ran a special camp focused on community and social-service initiatives around Arcot — cleanliness drives, awareness programmes and village outreach.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Graduation-day.jpg" alt="Graduation"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Graduation Day </h3><p class="news-desc">Graduating students were honoured at our Graduation Day. Parents, faculty and trustees joined to celebrate the achievements of the outgoing batch.</p><button onclick="showPage('gallery')" class="news-link">View Photos →</button></div></div>
+        <div class="news-card"><div class="news-img-wrap"><img src="images/Gallery/Deepali.jpg" alt="Deepavali"></div><div class="news-body"><div class="news-date">-</div><h3 class="news-title">Deepavali Celebration </h3><p class="news-desc">Deepavali was celebrated on campus with traditional sweets, lamp lighting ceremonies and cultural entertainment. The campus was lit with joy and colours.</p><button onclick="showPage('gallery')" class="news-link">View Gallery →</button></div></div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-news -->
+
+<!-- ══ CONTACT PAGE ══ -->
+<div class="page" id="page-contact">
+  <div class="page-hero" style="background:linear-gradient(135deg,var(--navy),#0a2a50);">
+    <div class="container">
+      <div class="sec-label gold">Get In Touch</div>
+      <h1 class="sec-title white">Contact <span style="color:var(--gold)">Us</span></h1>
+      <p style="color:rgba(255,255,255,0.8);">Reach out for admissions, enquiries or campus visits — we're happy to help.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-cards">
+            <div class="ci-card"><div class="ci-icon">📍</div><div class="ci-body"><div class="ci-label">Address</div><div class="ci-val">SSS College of Arts, Science &amp; Management<br>#15, By-pass Road, NH 48, Arcot<br>Tamil Nadu – 632 503</div><a href="https://maps.app.goo.gl/ja29byvqq4Zw9Cch6" target="_blank" class="ci-link">View on Map →</a></div></div>
+            <div class="ci-card"><div class="ci-icon">📞</div><div class="ci-body"><div class="ci-label">Phone Numbers</div><div class="ci-val"><a href="tel:+919150122555">+91 91501 22555</a><br><a href="tel:+919894218555">+91 98942 18555</a><br><a href="tel:+918754711733">+91 87547 11733</a></div></div></div>
+            <div class="ci-card"><div class="ci-icon">✉</div><div class="ci-body"><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:ssscareers@yahoo.co.in">ssscareers@yahoo.co.in</a></div></div></div>
+            <div class="ci-card"><div class="ci-icon"><i class="fab fa-whatsapp" style="color:#25D366;"></i></div><div class="ci-body"><div class="ci-label">WhatsApp</div><div class="ci-val"><a href="https://api.whatsapp.com/send?phone=918754711733&text=Hi" target="_blank">Chat on WhatsApp →</a></div></div></div>
+            <div class="ci-card"><div class="ci-icon">🕐</div><div class="ci-body"><div class="ci-label">Office Hours</div><div class="ci-val">Mon–Fri: 9 AM – 5 PM<br>Saturday: 9 AM – 1 PM</div></div></div>
+          </div>
+          <div style="margin-top:24px;">
+            <iframe src="https://www.google.com/maps?q=SSS+College+of+Arts,+Science+%26+Management,+Arcot&output=embed" style="width:100%;height:250px;border-radius:var(--radius-lg);border:1px solid var(--border);" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+        <div>
+          <div class="contact-form-box">
+            <h3 style="font-family:'Playfair Display',serif;color:var(--navy);margin-bottom:20px;">Send Us a Message</h3>
+            <div class="form-group"><label>Your Name *</label><input type="text" id="cName" placeholder="Enter your full name"></div>
+            <div class="form-row">
+              <div class="form-group"><label>Email *</label><input type="email" id="cEmail" placeholder="your@email.com"></div>
+              <div class="form-group"><label>Phone</label><input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX"></div>
+            </div>
+            <div class="form-group"><label>Programme Interested In</label><select id="cCourse"><option value="">Select a programme...</option><option>B.Sc Computer Science</option><option>B.C.A</option><option>B.Sc Data Science</option><option>B.Sc Artificial Intelligence</option><option>B.Sc Chemistry</option><option>B.Com</option><option>B.Com (Computer Applications)</option><option>B.B.A</option><option>B.A. Tamil</option><option>B.A. Defence Studies</option><option>M.Sc Computer Science</option><option>M.Com</option></select></div>
+            <div class="form-group"><label>Message *</label><textarea id="cMessage" rows="4" placeholder="Write your enquiry or message here..."></textarea></div>
+            <button class="form-submit" onclick="submitContactForm()">Send Message →</button>
+            <div class="contact-success" id="contactSuccess" style="display:none;">✅ Thank you! Our admissions team will contact you within 2 working days. You can also call us: <a href="tel:+919150122555">+91 91501 22555</a></div>
+          </div>
+          <div style="margin-top:20px;padding:16px 20px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);text-align:center;">
+            <p style="font-size:13px;color:var(--text-light);">Prefer to apply directly?</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform" target="_blank" class="btn-primary" style="display:inline-block;margin-top:8px;">Open Google Form →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+
+<!-- ══ STAFF PORTAL PAGE (LOGIN) ══ -->
+<div class="page" id="page-staff">
+  <div class="login-wrap">
+    <div class="login-box">
+      <div class="login-box-header">
+        <img src="images/logo.jpg" alt="SSS College" style="height:60px;margin-bottom:8px;">
+        <div class="login-icon">👨‍🏫</div>
+        <h2>Staff Portal</h2>
+        <p>SSS College Faculty &amp; Staff Login</p>
+      </div>
+      <div class="form-group"><label>Staff ID</label><input type="text" id="stId" placeholder="SSS"></div>
+      <div class="form-group"><label>Password</label><input type="password" id="stPassword" placeholder="Enter your password"></div>
+      <button class="form-submit" onclick="staffLogin()" style="margin-top:8px;">Login →</button>
+      <div class="login-result" id="staffLoginResult"></div>
+      <div class="login-divider"></div>
+      <div style="text-align:center;font-size:12.5px;color:var(--text-light);">
+        <p style="margin-top:8px;"><a href="#" onclick="showPage('contact')" style="color:var(--navy);">Contact Admin for credentials</a></p>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-staff -->
+
+<!-- ══ STAFF DASHBOARD PAGE ══ -->
+<div class="page" id="page-staff-dashboard">
+  <div class="sd-bar">
+    <div class="sd-bar-inner">
+      <div class="sd-bar-left">
+        <div class="sd-avatar" id="sdAvatar">S</div>
+        <div>
+          <div class="sd-name" id="sdName">Staff Name</div>
+          <div class="sd-role" id="sdRole">Role</div>
+        </div>
+      </div>
+      <div class="sd-bar-actions">
+        <button class="sd-tab-btn active" id="sdTabNotes" onclick="switchStaffTab('notes')">📤 Add Notes</button>
+        <button class="sd-tab-btn" id="sdTabHistory" onclick="switchStaffTab('history')">📚 My Notes</button>
+        <button class="sd-logout" onclick="staffLogout()">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ADD NOTES PANEL -->
+      <div class="sd-panel active" id="sdPanelNotes">
+        <div class="notes-upload-wrap">
+          <div class="notes-upload-form">
+            <div class="nuf-header">
+              <div class="nuf-icon">📝</div>
+              <div>
+                <h2>Publish a Class Note</h2>
+                <p>This will be instantly visible to students in the Class Notes section.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Department <span class="req">*</span></label>
+              <select id="nDept" onchange="updateNotePreview()">
+                <option value="">Select Department</option>
+                <option value="bsc-cs">B.Sc Computer Science</option>
+                <option value="bca">B.C.A</option>
+                <option value="bsc-data-science">B.Sc Data Science</option>
+                <option value="bsc-ai">B.Sc Artificial Intelligence</option>
+                <option value="bsc-chemistry">B.Sc Chemistry</option>
+                <option value="bcom">B.Com</option>
+                <option value="bcom-ca">B.Com (CA)</option>
+                <option value="ba-tamil">B.A. Tamil</option>
+                <option value="ba-english">B.A. English</option>
+                <option value="ba-defence">B.A. Defence Studies</option>
+                <option value="msc-cs">M.Sc Computer Science</option>
+                <option value="mcom">M.Com</option>
+              </select>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+              <div class="form-group">
+                <label>Academic Year <span class="req">*</span></label>
+                <select id="nYear" onchange="updateNotePreview()">
+                  <option value="">Select Year</option>
+                  <option value="I">Year I</option>
+                  <option value="II">Year II</option>
+                  <option value="III">Year III</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Semester <span class="req">*</span></label>
+                <select id="nSem" onchange="updateNotePreview()">
+                  <option value="">Select Semester</option>
+                  <option value="I">Sem I</option><option value="II">Sem II</option>
+                  <option value="III">Sem III</option><option value="IV">Sem IV</option>
+                  <option value="V">Sem V</option><option value="VI">Sem VI</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Subject <span class="req">*</span></label>
+              <input type="text" id="nSubject" placeholder="e.g. Data Structures" oninput="updateNotePreview()">
+            </div>
+
+            <div class="form-group">
+              <label>Note Title <span class="req">*</span></label>
+              <input type="text" id="nTitle" placeholder="e.g. Unit 3 – Stacks and Queues" oninput="updateNotePreview()">
+            </div>
+
+            <div class="form-group">
+              <label>Topics Covered</label>
+              <input type="text" id="nTopics" placeholder="e.g. Stack operations, Queue types" oninput="updateNotePreview()">
+            </div>
+
+            <div class="form-group">
+              <label>Note Type</label>
+              <div class="note-type-pills">
+                <label class="pill-label"><input type="radio" name="nType" value="Lecture Notes" checked onchange="updateNotePreview()"> 📝 Lecture Notes</label>
+                <label class="pill-label"><input type="radio" name="nType" value="Assignment" onchange="updateNotePreview()"> 📋 Assignment</label>
+                <label class="pill-label"><input type="radio" name="nType" value="Important Q&amp;A" onchange="updateNotePreview()"> ❓ Important Q&amp;A</label>
+                <label class="pill-label"><input type="radio" name="nType" value="Formula Sheet" onchange="updateNotePreview()"> 🔢 Formula Sheet</label>
+                <label class="pill-label"><input type="radio" name="nType" value="Reference" onchange="updateNotePreview()"> 📚 Reference</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Note Content <span class="req">*</span></label>
+              <textarea id="nContent" rows="10" placeholder="Type or paste the full note content here…" oninput="updateNotePreview()" style="width:100%;font-family:'Inter',sans-serif;padding:12px;border:1px solid var(--border);border-radius:var(--radius);resize:vertical;"></textarea>
+            </div>
+
+            <div class="nuf-actions">
+              <button class="btn-primary" id="submitNoteBtn" onclick="submitNote()">📤 Publish Note for Students</button>
+              <button class="btn-outline" onclick="clearNoteForm()">Clear Form</button>
+            </div>
+
+            <div class="note-success-msg" id="noteUploadSuccess" style="display:none;"></div>
+          </div>
+
+          <div class="notes-preview-panel">
+            <div class="np-header">👁️ Live Preview</div>
+            <div class="np-body" id="notePreviewBody">
+              <div class="np-placeholder">📒 Your note preview will appear here as you type...</div>
+            </div>
+            <div class="np-tip">💡 Tip: Students see exactly this preview — check formatting before publishing.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MY NOTES / HISTORY PANEL -->
+      <div class="sd-panel" id="sdPanelHistory">
+        <div id="staffNoteHistory"><!-- JS rendered --></div>
+      </div>
+
+    </div>
+  </section>
+</div><!-- /page-staff-dashboard -->
+
+<!-- STAFF MODAL -->
+<div class="staff-modal-overlay" id="staffModalOverlay" onclick="closeStaffModal(event)">
+  <div class="staff-modal" id="staffModal">
+    <div class="staff-modal-header" id="staffModalHeader"></div>
+    <div class="staff-modal-body" id="staffModalBody"></div>
+  </div>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div id="galleryLightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;flex-direction:column;">
+  <button onclick="closeLightbox()" style="position:absolute;top:20px;right:24px;background:rgba(255,255,255,0.15);border:none;color:#fff;width:40px;height:40px;border-radius:50%;font-size:20px;cursor:pointer;">✕</button>
+  <img id="lightboxImg" src="" alt="" style="max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+  <div id="lightboxCap" style="color:rgba(255,255,255,0.7);margin-top:12px;font-size:13px;"></div>
+</div>
+
+<!-- EVENTS / NOTIFICATIONS POPUP -->
+<div class="events-popup-overlay" id="eventsPopupOverlay">
+  <div class="events-popup">
+    <div class="events-popup-header">
+      <button class="events-popup-close" onclick="closeEventsPopup()">✕</button>
+      <h3>🔔 <span data-i18n="popup_title">Upcoming Events &amp; Notifications</span></h3>
+      <p data-i18n="popup_sub">Stay updated with what's happening at SSS College</p>
+    </div>
+    <div class="events-popup-body" id="eventsPopupBody">
+
+  <!-- Admission -->
+  <div class="event-item">
+    <div class="event-date-badge">
+      <span class="ed-day">22</span>
+      <span class="ed-mon">Jul</span>
+    </div>
+
+    <div>
+      <div class="event-item-title">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-B9wg745SHXN0oDn7D7p34WdOnvMQ5neuY9iQoqcWkoXRLQ/viewform"
+           target="_blank"
+           style="text-decoration:none; color:inherit; font-weight:bold;"
+           data-i18n="ev1_title">
+          Admissions Open 2026–27
+        </a>
+      </div>
+
+      <div class="event-item-desc" data-i18n="ev1_desc">
+        UG & PG applications now open. Apply online before seats close.
+      </div>
+    </div>
+  </div>
+
+  <!-- Placement -->
+  <div class="event-item">
+    <div class="event-date-badge">
+      <span class="ed-day">22</span>
+      <span class="ed-mon">Jul</span>
+    </div>
+
+    <div>
+      <div class="event-item-title" data-i18n="ev2_title">
+        Campus Placement Drive
+      </div>
+
+      <div class="event-item-desc" data-i18n="ev2_desc">
+        TVS recruitment drive on campus — final-year students register now.
+      </div>
+    </div>
+  </div>
+
+  <!-- Semester Result -->
+  <div class="event-item">
+    <div class="event-date-badge">
+      <span class="ed-day">11</span>
+      <span class="ed-mon">JULY</span>
+    </div>
+
+    <div>
+      <div class="event-item-title">
+        <a href="https://coe.tvu.edu.in/student_result/"
+           target="_blank"
+           style="text-decoration:none; color:inherit; font-weight:bold;"
+           data-i18n="ev3_title">
+          Semester Exam Results
+        </a>
+      </div>
+
+      <div class="event-item-desc" data-i18n="ev3_desc">
+        TVU semester results released — Click here to check your result.
+      </div>
+    </div>
+  </div>
+
+</div>
+    <div class="events-popup-footer">
+      <label><input type="checkbox" id="dontShowToday"> <span data-i18n="popup_dontshow">Don't show again today</span></label>
+      <button onclick="closeEventsPopup()" data-i18n="popup_close">Got it</button>
+    </div>
+  </div>
+</div>
+<button class="notif-bell" id="notifBell" onclick="openEventsPopup()" title="Notifications">🔔<span class="notif-dot"></span></button>
+
+<!-- SOCIAL FLOAT -->
+<div class="social-float">
+  <a href="https://api.whatsapp.com/send?phone=918754711733" target="_blank" class="sf-btn sf-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/sss_campus_diaries" target="_blank" class="sf-btn sf-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/share/1DDBXxi9xJ/" target="_blank" class="sf-btn sf-fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://youtube.com/@ssscollege_arcot" target="_blank" class="sf-btn sf-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.jpg" alt="SSS College Logo" style="height:60px;margin-bottom:12px;border-radius:4px;">
+      <div class="brand-name"></div>
+      <div class="brand-sub">#15, Bypass Road, NH 48, Arcot – 632 503, Ranipet district, Tamil Nadu, India.<br>·</div>
+      <div class="footer-affil">
+        <img src="images/media__1783432641215.jpeg" alt="TVU" style="height:44px;margin-bottom:8px;border-radius:4px;">
+        <p>Affiliated to <strong>Thiruvalluvar University</strong><br>Serkkadu, Vellore – 632 115<br>NAAC Accredited Grade · UGC Recognized · AIU Member</p>
+      </div>
+      <div class="social-links" style="margin-top:16px;">
+        <a class="social-btn" href="https://api.whatsapp.com/send?phone=918754711733" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-btn" href="https://www.instagram.com/sss_campus_diaries" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a class="social-btn" href="https://www.facebook.com/share/1DDBXxi9xJ/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-btn" href="https://youtube.com/@ssscollege_arcot" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_quicklinks">Quick Links</h4>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('about')">About SSS College</a>
+      <a onclick="showPage('admissions')">Admissions 2026–27</a>
+      <a onclick="showPage('courses')">Academic Programmes</a>
+      <a onclick="showPage('faculty')">Faculty Directory</a>
+      <a onclick="showPage('examinations')">Examinations</a>
+      <a onclick="showPage('qpapers')">Question Papers</a>
+      <a onclick="showPage('placements')">Placements</a>
+      <a onclick="showPage('gallery')">Gallery</a>
+      <a onclick="showPage('contact')">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_examres">Exam Resources</h4>
+      <a href="https://coe.tvu.edu.in/student_result/" target="_blank">Results (TVU COE)</a>
+      <a onclick="showPage('qpapers')">Previous Year Papers</a>
+      <a href="https://www.tvu.edu.in/links/regulations-and-syllabus/" target="_blank">TVU Regulations</a>
+      <a href="https://coe.tvu.edu.in/" target="_blank">TVU COE Portal</a>
+      <a href="https://www.tvu.edu.in/" target="_blank">Thiruvalluvar University</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_contactus">Contact Us</h4>
+      <div class="footer-contact-item"><span>📍</span><span>#15, Bypass Road, NH 48, Arcot – 632 503, Ranipet Dist., TN</span></div>
+      <div class="footer-contact-item"><span>📞</span><a href="tel:+919150122555" style="color:rgba(255,255,255,0.7);">+91 91501 22555</a></div>
+      <div class="footer-contact-item"><span>📱</span><a href="tel:+919894218555" style="color:rgba(255,255,255,0.7);">+91 98942 18555</a></div>
+      <div class="footer-contact-item"><span>✉</span><a href="mailto:ssscareers@yahoo.co.in" style="color:rgba(255,255,255,0.7);">ssscareers@yahoo.co.in</a></div>
+      <div class="footer-contact-item" style="margin-top:8px;"><span>🕐</span><span>Mon–Fri: 9am–5pm | Sat: 9am–1pm</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p>© 2026 SSS College of Arts, Science &amp; Management, Arcot. All rights reserved. | Affiliated to <a href="https://www.tvu.edu.in" target="_blank">Thiruvalluvar University</a></p>
+      <p>Academic Year 2026–27 2ND YEAR STUDENT | Designed by <a href="https://karthik-raj-m-portfolio.netlify.app/" target="_blank" style="color:var(--gold);">KARTHIK RAJ M</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

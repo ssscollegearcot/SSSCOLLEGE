@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "companiesVisited": 28,
+    "studentsPlaced": 320,
+    "highestPackage": "6.2 LPA",
+    "averagePackage": "3.4 LPA",
+    "placementRate": "78"
+  },
+  "companies": [
+    { "name": "Tata Consultancy Services", "short": "TCS", "sector": "IT", "icon": "🏢" },
+    { "name": "Cognizant Technology Solutions", "short": "CTS", "sector": "IT", "icon": "🏢" },
+    { "name": "HCL Technologies", "short": "HCL", "sector": "IT", "icon": "🏢" },
+    { "name": "Infosys", "short": "Infosys", "sector": "IT", "icon": "🏢" },
+    { "name": "Wipro", "short": "Wipro", "sector": "IT", "icon": "🏢" },
+    { "name": "Capgemini", "short": "Capgemini", "sector": "IT", "icon": "🏢" },
+    { "name": "HDFC Bank", "short": "HDFC", "sector": "Banking", "icon": "🏦" },
+    { "name": "ICICI Bank", "short": "ICICI", "sector": "Banking", "icon": "🏦" },
+    { "name": "Axis Bank", "short": "Axis", "sector": "Banking", "icon": "🏦" },
+    { "name": "Amazon", "short": "Amazon", "sector": "E-Commerce", "icon": "📦" },
+    { "name": "Accenture", "short": "Accenture", "sector": "IT", "icon": "🏢" },
+    { "name": "Tech Mahindra", "short": "Tech M", "sector": "IT", "icon": "🏢" }
+  ],
+  "testimonials": [
+    {
+      "name": "S. Karthikeyan",
+      "batch": "B.Sc CS 2023",
+      "company": "TCS",
+      "role": "Software Engineer",
+      "message": "SSS College gave me the perfect foundation. The faculty support and campus placement drive helped me secure my dream job at TCS before I even completed my degree!"
+    },
+    {
+      "name": "M. Priya",
+      "batch": "B.Com CA 2023",
+      "company": "HDFC Bank",
+      "role": "Junior Associate",
+      "message": "The commerce faculty are extremely dedicated. The Tally certification training at SSS College was a key differentiator in my HDFC Bank interview."
+    },
+    {
+      "name": "R. Dharani",
+      "batch": "BCA 2022",
+      "company": "Cognizant",
+      "role": "Programmer Analyst",
+      "message": "The programming labs and project work at SSS College gave me hands-on experience that I use daily at Cognizant. Truly grateful to my professors."
+    }
+  ]
+}
