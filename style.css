@@ -47,7 +47,7 @@ ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
 /* ── Utility ──────────────────────────────────────────────── */
-.container { max-width: 1600px; margin: 0 auto; padding: 0 20px; }
+.container { max-width: 16  00px; margin: 0 auto; padding: 0 20px; }
 .section { padding: 64px 0; }
 .section.alt { background: var(--off-white); }
 .section.dark { background: var(--navy); }

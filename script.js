@@ -104,7 +104,7 @@ const STAFF_DATA = [
     spec:'C, C++, and Python, and I have extensive experience in Java', photo:'Sangeetha D.jpeg',
     avatarColor:'#9b2335', publications:'I am Sangeetha D, an Assistant Professor in the Department of Computer Applications, with four years of teaching experience. I have completed my Master of Computer Applications (MCA) and Bachelor of Education (B.Ed.). My strongest areas of expertise include Operating Systems and Software Engineering. I am proficient in programming languages such as C, C++, and Python, and I have extensive experience in Java. I also possess knowledge of Machine Learning and have a keen interest in emerging technologies. I am passionate about teaching and strive to create an engaging learning environment that enables students to build strong technical knowledge, practical skills, and problem-solving abilities, preparing them for successful careers in the field of computer applications.',
     email:'-', phone:'-', joined:'2009' },
-      { id:'s07', dept:'bca', deptName:'B.C.A',
+    { id:'s07', dept:'bca', deptName:'B.C.A',
     name:'J. Anitha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
     qual:'MCA., M.Ed., M.Phil ', exp:'8 Years',
     spec:'Computer Networks, Operating Systems, Python', photo:'Anitha.jpeg',
@@ -130,292 +130,299 @@ const STAFF_DATA = [
     email:'-', phone:'-', joined:'2017' },
   
   /* ── B.Sc Data Science ── */
-  { id:'s53', dept:'bsc-data-science', deptName:'B.Sc Data Science',
-    name:'Dr. A. Priya Dharshini', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
-    qual:'M.Sc. (Statistics), M.Phil., Ph.D.', exp:'12 Years',
-    spec:'Machine Learning, Data Visualization, R Programming', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#5a1a8a', publications:'11 papers in Scopus/Web of Science journals. Anna University Ph.D.',
-    email:'priyadharshini.ds@ssscollege.edu.in', phone:'+91 99400 11401', joined:'2012' },
-  { id:'s54', dept:'bsc-data-science', deptName:'B.Sc Data Science',
-    name:'Mr. S. Vishnu Vardhan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Data Science), (Ph.D. pursuing)', exp:'5 Years',
-    spec:'Python, Deep Learning, Big Data Analytics', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#1a5a9a', publications:'Google-certified Data Analytics Professional.',
-    email:'vishnu.ds@ssscollege.edu.in', phone:'+91 99400 11402', joined:'2019' },
   { id:'s11', dept:'bsc-data-science', deptName:'B.Sc Data Science',
-    name:'Ms. R. Keerthana', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (CS), M.Phil.', exp:'4 Years',
-    spec:'Business Intelligence, Statistics, SQL', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#2a6a4a', publications:'1 paper in national conference. IBM certified.',
-    email:'keerthana.ds@ssscollege.edu.in', phone:'+91 99400 11403', joined:'2020' },
+    name:'-', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
+    qual:'-', exp:'-',
+    spec:'-', photo:'-',
+    avatarColor:'#5a1a8a', publications:'-',
+    email:'-', phone:'-', joined:'-' },
+  { id:'s12', dept:'bsc-data-science', deptName:'B.Sc Data Science',
+    name:'-', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'----', exp:'--',
+    spec:'--', photo:'-',
+    avatarColor:'#1a5a9a', publications:'--',
+    email:'----', phone:'--', joined:'--' },
+  { id:'s13', dept:'bsc-data-science', deptName:'B.Sc Data Science',
+    name:'-', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'-', exp:'-',
+    spec:'-', photo:'-',
+    avatarColor:'#2a6a4a', publications:'-----',
+    email:'-', phone:'--', joined:'-' },
 
   /* ── B.Sc Artificial Intelligence ── */
-  { id:'s12', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
-    name:'Dr. M. Suriya Prabha', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
-    qual:'M.Sc. (CS), M.Phil., Ph.D. (AI)', exp:'10 Years',
-    spec:'Artificial Intelligence, NLP, Computer Vision', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#8a3a00', publications:'9 research papers in AI/ML journals. NVIDIA AI certified.',
-    email:'suriya.ai@ssscollege.edu.in', phone:'+91 99400 11501', joined:'2014' },
-  { id:'s13', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
-    name:'Mr. D. Bharath', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Tech. (AI & ML), M.Phil.', exp:'4 Years',
-    spec:'Neural Networks, Python for AI, Robotics', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#1a3a7a', publications:'TensorFlow and PyTorch certified developer.',
-    email:'bharath.ai@ssscollege.edu.in', phone:'+91 99400 11502', joined:'2020' },
-  { id:'s14', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
-    name:'Ms. K. Divya Bharathi', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (IT), M.Phil.', exp:'3 Years',
-    spec:'Expert Systems, Ethics in AI, Cloud Computing', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#5a1a8a', publications:'AWS Cloud Practitioner certified.',
-    email:'divya.ai@ssscollege.edu.in', phone:'+91 99400 11503', joined:'2021' },
+  { id:'s16', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
+    name:'--', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
+    qual:'-----------', exp:'-',
+    spec:'----', photo:'?',
+    avatarColor:'#8a3a00', publications:'-------------------',
+    email:'---------------', phone:'----------', joined:'----' },
+  { id:'s17', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
+    name:'--', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'----', exp:'-',
+    spec:'----', photo:'staff_male_2_1783430692518.jpg',
+    avatarColor:'#1a3a7a', publications:'-----',
+    email:'----', phone:'--', joined:'--' },
+  { id:'s18', dept:'bsc-ai', deptName:'B.Sc Artificial Intelligence',
+    name:'--', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--', exp:'--',
+    spec:'---------', photo:'..',
+    avatarColor:'#5a1a8a', publications:'.',
+    email:'---', phone:'--', joined:'--' },
 
   /* ── Mathematics ── */
-  { id:'s15', dept:'mathematics', deptName:' Mathematics',
+  { id:'s21', dept:'mathematics', deptName:' Mathematics',
     name:'R. SELVAKUMAR', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
     qual:'M. Sc, M. Phil, B. Ed.,', exp:'17 Years',
     spec:'ALGEBRA ANALYSIS FUNCTIONAL ANALYSIS STATISTICS', photo:'R. SELVAKUMAR .jpeg',
     avatarColor:'#1a3a7a', publications:'Core Responsibilities Academic Leadership & Governance: Oversee the strategic planning, curriculum delivery, and daily operations of the Department of Mathematics to maintain high academic standards. Faculty Management & Mentorship: Guide, evaluate, and mentor faculty members, promoting professional development, research initiatives, and effective teaching methodologies. Curriculum Design & Enhancement: Modernize the mathematics syllabus by incorporating advanced topics in Algebra, Analysis, and Statistics, ensuring alignment with institutional standards and market requirements. Student Academic Progression: Monitor student performance, implement remedial measures for struggling students, and organize advanced seminars to foster analytical thinking. Resource & Workload Allocation: Manage the department annual budget, optimize faculty timetables, and allocate courses based on specialization and expertise. Examination & Evaluation Oversight: Supervise the internal assessment process, question paper setting, and timely evaluation of examinations within the department. 17 Years of Teaching Excellence: Successfully delivered advanced lectures across core mathematical domains, including Functional Analysis, Real & Complex Analysis, and Abstract Algebra, consistently achieving excellent student pass percentages. Departmental Growth & Leadership Spearheaded the departmentS growth over a long-standing tenure, enhancing student enrollment and improving overall graduation rates. Curriculum Modernization: Successfully introduced structured modules in Applied Statistics and Mathematical Modeling, bridging the gap between theoretical math and industry applications. Academic Event Organization: Chaired and successfully organized multiple regional/national seminars, workshops, and faculty development programs (FDPs) to promote mathematical research. Streamlined Digital Infrastructure: Led the transition to hybrid learning tools and digital mathematical software (such as LaTeX or MATLAB platforms) for department faculty and students. Mentorship Impact: Guided hundreds of undergraduate and postgraduate students through academic counseling, leading many toward successful careers in teaching, research, and data analytics.',
     email:'-', phone:'-', joined:'2009' },
-  { id:'s16', dept:'mathematics', deptName:'Mathematics',
-    name:'Mr. P. Sureshkumar', desig:'Professor', fullTitle:'Professor',
-    qual:'M.Sc. (Maths), M.Phil., (Ph.D. pursuing)', exp:'14 Years',
-    spec:'Calculus, Differential Equations, Linear Algebra', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#2a4a7a', publications:'6 papers in Scopus journals. SLET qualified.',
-    email:'suresh.maths@ssscollege.edu.in', phone:'+91 99400 11602', joined:'2010' },
-  { id:'s17', dept:'mathematics', deptName:'Mathematics',
-    name:'Mrs. S. Radha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Maths), M.Phil.', exp:'9 Years',
-    spec:'Statistics, Probability, Numerical Methods', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#6a2a1a', publications:'3 papers in national conferences. NET qualified.',
-    email:'radha.maths@ssscollege.edu.in', phone:'+91 99400 11603', joined:'2015' },
+  { id:'s22', dept:'mathematics', deptName:'Mathematics',
+    name:'---', desig:'Professor', fullTitle:'Professor',
+    qual:'----', exp:'--',
+    spec:'-----', photo:'-----',
+    avatarColor:'#2a4a7a', publications:'----',
+    email:'++++++', phone:'---', joined:'----' },
+  { id:'s23', dept:'mathematics', deptName:'Mathematics',
+    name:'+-+', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'---', exp:'--+-',
+    spec:'+-+', photo:'+-+',
+    avatarColor:'#6a2a1a', publications:'+-+',
+    email:'+++', phone:'++', joined:'--' },
 
   /* ── B.Sc Physics ── */
-  { id:'s18', dept:'bsc-chemistry', deptName:'B.Sc Physics',
-    name:'Dr. T. Senthil Nathan', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'M.Sc. (Physics), M.Phil., Ph.D.', exp:'17 Years',
-    spec:'Quantum Mechanics, Nuclear Physics, Optics', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#2a4a7a', publications:'12 papers in physics journals. BRNS project investigator.',
-    email:'senthilnathan.physics@ssscollege.edu.in', phone:'+91 99400 11701', joined:'2007' },
-  { id:'s19', dept:'bsc-chemistry', deptName:'B.Sc Physics',
-    name:'Mrs. M. Kavitha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Physics), M.Phil.', exp:'10 Years',
-    spec:'Electronics, Electromagnetic Theory, Solid State', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#1a3a7a', publications:'4 papers in national journals. SET qualified.',
-    email:'kavitha.physics@ssscollege.edu.in', phone:'+91 99400 11702', joined:'2014' },
-  { id:'s20', dept:'bsc-chemistry', deptName:'B.Sc Physics',
-    name:'Mr. G. Anand', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Physics), M.Phil.', exp:'6 Years',
-    spec:'Classical Mechanics, Thermodynamics, Spectroscopy', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#2a4a7a', publications:'2 papers in national conferences. NET qualified.',
-    email:'anand.physics@ssscollege.edu.in', phone:'+91 99400 11703', joined:'2018' },
-
+  { id:'s25', dept:'bsc-physics', deptName:'B.Sc Physics',
+    name:'--', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
+    qual:'--', exp:'+-',
+    spec:'-+-', photo:'-+-',
+    avatarColor:'#2a4a7a', publications:'++',
+    email:'+-+', phone:'+-+', joined:'2007' },
+  { id:'s19', dept:'bsc-physics', deptName:'B.Sc Physics',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'----------', exp:'-----------',
+    spec:'--------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#6a2a1a', publications:'---------------------',
+    email:'-----------', phone:'----------', joined:'----' },
+  { id:'s20', dept:'bsc-physics', deptName:'B.Sc Physics',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'----------', exp:'-----------',
+    spec:'--------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#6a2a1a', publications:'---------------------',
+    email:'-----------', phone:'----------', joined:'----' },
+    
   /* ── B.Sc Chemistry ── */
   { id:'s21', dept:'bsc-chemistry', deptName:'B.Sc Chemistry',
-    name:'Dr. R. Meenakshi', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'M.Sc. (Chemistry), M.Phil., Ph.D.', exp:'16 Years',
-    spec:'Organic Chemistry, Medicinal Chemistry, Spectroscopy', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#6a2a1a', publications:'10 papers in chemistry journals. UGC minor project holder.',
-    email:'meenakshi.chem@ssscollege.edu.in', phone:'+91 99400 11801', joined:'2008' },
+    name:'-----------------', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
+    qual:'----------', exp:'-----------',
+    spec:'--------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#6a2a1a', publications:'---------------------',
+    email:'-----------', phone:'----------', joined:'----' },
   { id:'s22', dept:'bsc-chemistry', deptName:'B.Sc Chemistry',
-    name:'Mr. S. Prabhu', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Chemistry), M.Phil.', exp:'8 Years',
-    spec:'Inorganic Chemistry, Analytical Chemistry, Environmental Chem', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#2a6a4a', publications:'3 papers in national journals. SET qualified.',
-    email:'prabhu.chem@ssscollege.edu.in', phone:'+91 99400 11802', joined:'2016' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'----------', exp:'--------',
+    spec:'--------', photo:'staff_male_1_1783430669817.jpg',
+    avatarColor:'#2a6a4a', publications:'-------------------',
+    email:'-----------', phone:'------------', joined:'----' },
   { id:'s23', dept:'bsc-chemistry', deptName:'B.Sc Chemistry',
-    name:'Mrs. L. Saranya', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Chemistry), M.Phil.', exp:'5 Years',
-    spec:'Physical Chemistry, Industrial Chemistry, Lab Techniques', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#6a2a1a', publications:'1 paper in national conference. Lab safety certified.',
-    email:'saranya.chem@ssscollege.edu.in', phone:'+91 99400 11803', joined:'2019' },
+    name:'-----------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'--------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#6a2a1a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── B.Sc Biotechnology ── */
-  { id:'s24', dept:'bsc-chemistry', deptName:'B.Sc Biotechnology',
-    name:'Dr. P. Anitha Devi', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
-    qual:'M.Sc. (Biotechnology), M.Phil., Ph.D.', exp:'13 Years',
-    spec:'Molecular Biology, Immunology, Bioinformatics', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#1a6a4a', publications:'9 papers in life science journals. DBT project recipient.',
-    email:'anitha.biotech@ssscollege.edu.in', phone:'+91 99400 11901', joined:'2011' },
-  { id:'s25', dept:'bsc-chemistry', deptName:'B.Sc Biotechnology',
-    name:'Mr. R. Ganesh', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Biotechnology), M.Phil.', exp:'7 Years',
-    spec:'Cell Biology, Genetics, Microbiology, Lab Techniques', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#2a6a4a', publications:'2 papers in biotechnology conferences.',
-    email:'ganesh.biotech@ssscollege.edu.in', phone:'+91 99400 11902', joined:'2017' },
-  { id:'s26', dept:'bsc-chemistry', deptName:'B.Sc Biotechnology',
-    name:'Mrs. D. Sangeetha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (Microbiology), M.Phil.', exp:'5 Years',
-    spec:'Environmental Biotechnology, Bioprocess Engineering', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#1a6a4a', publications:'NET qualified. Published in national journal.',
-    email:'sangeetha.biotech@ssscollege.edu.in', phone:'+91 99400 11903', joined:'2019' },
+  { id:'s24', dept:'bsc-biotech', deptName:'B.Sc Biotechnology',
+    name:'------------', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
+    qual:'--------------', exp:'--------',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'----------', phone:'-------', joined:'----' },
+  { id:'s25', dept:'bsc-biotech', deptName:'B.Sc Biotechnology',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_2_1783430692518.jpg',
+    avatarColor:'#2a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s26', dept:'bsc-biotech', deptName:'B.Sc Biotechnology',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── B.Com ── */
   { id:'s27', dept:'bcom', deptName:'B.Com',
-    name:'Mrs. M. Lakshmi', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'M.Com., M.Phil., M.Ed., MBA', exp:'16 Years',
-    spec:'Financial Accounting, Corporate Accounting, Auditing', photo:'Mrs. M. Lakshmi.jpeg',
-    avatarColor:'#7a5a00', publications:'Mrs. M. Lakshmi is a dedicated academician with 16 years of teaching experience in higher education. She holds postgraduate degrees in Commerce and Business Administration (M.Com. and MBA), along with M.Phil. and M.Ed., reflecting her strong academic foundation and commitment to excellence in teaching and learning. She is passionate about nurturing students through innovative teaching methods, academic mentoring, and value-based education. Her areas of interest include Commerce, Management, Accounting, Business Studies, and Educational Practices. She actively contributes to curriculum development, student guidance, and various academic and co-curricular activities within the institution. With a student-centric approach and a commitment to continuous professional development, Mrs. M. Lakshmi strives to inspire learners to achieve academic excellence and develop the skills required for their personal and professional growth..',
-    email:'-', phone:' -', joined:'2010' },
-  { id:'s28', dept:'bcom', deptName:'B.Com',
-    name:'Mrs. S. Padmavathi', desig:'Professor', fullTitle:'Professor',
-    qual:'M.Com., M.Phil., B.Ed.', exp:'14 Years',
-    spec:'Business Law, Income Tax, Business Economics', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#5a4000', publications:'5 papers in commerce education journals.',
-    email:'padmavathi.bcom@ssscollege.edu.in', phone:'+91 99400 12002', joined:'2010' },
-  { id:'s29', dept:'bcom', deptName:'B.Com',
-    name:'Mr. N. Murugesan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com., M.Phil.', exp:'9 Years',
-    spec:'Cost Accounting, Management Accounting, Banking', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#7a5a00', publications:'3 papers in national conferences. SET qualified.',
-    email:'murugesan.bcom@ssscollege.edu.in', phone:'+91 99400 12003', joined:'2015' },
-  { id:'s30', dept:'bcom', deptName:'B.Com',
-    name:'Mrs. T. Geetha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com., M.Phil.', exp:'7 Years',
-    spec:'Business Statistics, Financial Markets, Auditing', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#5a4000', publications:'2 papers in commerce journals. NET qualified.',
-    email:'geetha.bcom@ssscollege.edu.in', phone:'+91 99400 12004', joined:'2017' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
+  { id:'s28', dept:'bkcom', deptName:'B.Com',
+    name:'------------', desig:'Professor', fullTitle:'Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_1_1783430680601.jpg',
+    avatarColor:'#5a4000', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s29', dept:'bkcom', deptName:'B.Com',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_1_1783430669817.jpg',
+    avatarColor:'#7a5a00', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s30', dept:'bkcom', deptName:'B.Com',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#5a4000', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── B.Com (CA) ── */
-  { id:'s31', dept:'bcom-ca', deptName:'B.Com (Computer Applications)',
-    name:'Mr. V. Balamurugan', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
-    qual:'M.Com. (CA), MCA, M.Phil.', exp:'14 Years',
-    spec:'Tally ERP, E-Commerce, Financial Accounting Software', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#5a4a00', publications:'Tally Certified Professional. 6 papers in national journals.',
-    email:'balamurugan.bcoca@ssscollege.edu.in', phone:'+91 99400 12101', joined:'2010' },
-  { id:'s32', dept:'bcom-ca', deptName:'B.Com (Computer Applications)',
-    name:'Mrs. A. Kavitha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com., MCA, M.Phil.', exp:'9 Years',
-    spec:'MS Office, Data Entry, Business Software, ERP', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#7a5a00', publications:'3 papers in commerce & IT journals. SET qualified.',
-    email:'kavitha.bcoca@ssscollege.edu.in', phone:'+91 99400 12102', joined:'2015' },
-  { id:'s33', dept:'bcom-ca', deptName:'B.Com (Computer Applications)',
-    name:'Ms. R. Nithya', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com. (CA), M.Phil.', exp:'5 Years',
-    spec:'Corporate Accounting, E-Commerce, Internet Banking', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#5a4a00', publications:'1 paper in national conference. NET qualified.',
-    email:'nithya.bcoca@ssscollege.edu.in', phone:'+91 99400 12103', joined:'2019' },
+  { id:'s31', dept:'bkcom-ca', deptName:'B.Com (Computer Applications)',
+    name:'------------', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_3_1783430730751.jpg',
+    avatarColor:'#5a4a00', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s32', dept:'bkcom-ca', deptName:'B.Com (Computer Applications)',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_1_1783430680601.jpg',
+    avatarColor:'#7a5a00', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s33', dept:'bkcom-ca', deptName:'B.Com (Computer Applications)',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#5a4a00', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── B.B.A ── */
-  { id:'s34', dept:'bba', deptName:'B.B.A',
+  { id:'s34', dept:'bkba', deptName:'B.B.A',
     name:'Dr. C. Selvakumar', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'MBA, M.Phil., Ph.D.', exp:'15 Years',
-    spec:'Strategic Management, HR Management, Entrepreneurship', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#7a2a00', publications:'10 papers in management journals. MBA mentor & career coach.',
-    email:'selvakumar.bba@ssscollege.edu.in', phone:'+91 99400 12201', joined:'2009' },
-  { id:'s35', dept:'bba', deptName:'B.B.A',
-    name:'Mrs. K. Malathi', desig:'Professor', fullTitle:'Professor',
-    qual:'MBA, M.Phil., (Ph.D. pursuing)', exp:'12 Years',
-    spec:'Marketing Management, Consumer Behavior, Advertising', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#5a2000', publications:'5 papers in management journals. SET qualified.',
-    email:'malathi.bba@ssscollege.edu.in', phone:'+91 99400 12202', joined:'2012' },
-  { id:'s36', dept:'bba', deptName:'B.B.A',
-    name:'Mr. T. Dinesh', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'MBA, M.Phil.', exp:'7 Years',
-    spec:'Financial Management, Business Communication, OB', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#7a2a00', publications:'2 papers in national management conferences.',
-    email:'dinesh.bba@ssscollege.edu.in', phone:'+91 99400 12203', joined:'2017' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
+  { id:'s35', dept:'bkba', deptName:'B.B.A',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
+  { id:'s36', dept:'bkba', deptName:'B.B.A',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
 
   /* ── B.A. Tamil ── */
-  { id:'s37', dept:'ba-tamil', deptName:'B.A. Tamil',
-    name:'Dr. S. Venkatesan', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'M.A. (Tamil), M.Phil., Ph.D.', exp:'22 Years',
-    spec:'Classical Tamil, Sangam Literature, Tamil Grammar', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#8a1a1a', publications:'18 research papers. Author of 3 Tamil literary books. TVU BOS member.',
-    email:'venkatesan.tamil@ssscollege.edu.in', phone:'+91 99400 12301', joined:'2003' },
-  { id:'s38', dept:'ba-tamil', deptName:'B.A. Tamil',
-    name:'Mrs. P. Kalaiyarasi', desig:'Professor', fullTitle:'Professor',
-    qual:'M.A. (Tamil), M.Phil., B.Ed.', exp:'15 Years',
-    spec:'Tamil Poetry, Modern Tamil Prose, Drama', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#5a0a0a', publications:'7 papers in Tamil linguistics journals.',
-    email:'kalaiyarasi.tamil@ssscollege.edu.in', phone:'+91 99400 12302', joined:'2009' },
-  { id:'s39', dept:'ba-tamil', deptName:'B.A. Tamil',
-    name:'Mr. M. Anbarasan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.A. (Tamil), M.Phil.', exp:'8 Years',
-    spec:'Comparative Literature, Translation Studies, Linguistics', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#8a1a1a', publications:'3 papers in Tamil and comparative literature journals.',
-    email:'anbarasan.tamil@ssscollege.edu.in', phone:'+91 99400 12303', joined:'2016' },
+  { id:'s37', dept:'bka-tamil', deptName:'B.A. Tamil',
+    name:'------------', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
+  { id:'s38', dept:'bka-tamil', deptName:'B.A. Tamil',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
+  { id:'s39', dept:'bka-tamil', deptName:'B.A. Tamil',
+      name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a6a4a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+
 
   /* ── B.A. English ── */
-  { id:'s40', dept:'english', deptName:'English',
-    name:'-', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
-    qual:'+', exp:'18 Years',
-    spec:'-', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#2a5a7a', publications:'-------',
-    email:'+++', phone:'///', joined:'****' },
-  { id:'s41', dept:'english', deptName:'B.A. English',
-    name:'Mr. R. Srinivasan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.A. (English), M.Phil.', exp:'10 Years',
-    spec:'American Literature, Creative Writing, Communication', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#1a3a5a', publications:'4 papers in English language teaching journals.',
-    email:'srinivasan.english@ssscollege.edu.in', phone:'+91 99400 12402', joined:'2014' },
-  { id:'s42', dept:'english', deptName:'B.A. English',
-    name:'Mrs. V. Radhika', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.A. (English), M.Phil.', exp:'6 Years',
-    spec:'Phonetics, World Literature, Soft Skills', photo:'staff_female_2_1783430718315.jpg',
-    avatarColor:'#2a5a7a', publications:'2 papers in national English language conferences.',
-    email:'radhika.english@ssscollege.edu.in', phone:'+91 99400 12403', joined:'2018' },
+  { id:'s40', dept:'ba-english', deptName:'B.A. English',
+    name:'------------', desig:'HOD', fullTitle:'Head of Department & Associate Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#2a5a7a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s41', dept:'ba-english', deptName:'B.A. English',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#1a3a5a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s42', dept:'ba-english', deptName:'B.A. English',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_2_1783430718315.jpg',
+    avatarColor:'#2a5a7a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── B.A. Defence Studies ── */
   { id:'s43', dept:'ba-defence', deptName:'B.A. Defence Studies',
-    name:'Major (Retd.) K. Palaniappan', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
-    qual:'M.A. (Defence Studies), (Ph.D. pursuing)', exp:'16 Years',
-    spec:'Military History, Strategic Studies, NCC, Physical Training', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#2a5a2a', publications:'Retired Major (Indian Army). Author of tactical studies module.',
-    email:'palaniappan.defence@ssscollege.edu.in', phone:'+91 99400 12501', joined:'2010' },
+    name:'------------', desig:'HOD', fullTitle:'Head of Department & Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_3_1783430730751.jpg',
+    avatarColor:'#2a5a2a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
   { id:'s44', dept:'ba-defence', deptName:'B.A. Defence Studies',
-    name:'Mr. S. Muthukrishnan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.A. (Political Science), M.Phil.', exp:'9 Years',
-    spec:'International Relations, Counter-Terrorism, Geopolitics', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#1a3a1a', publications:'4 papers in defence and strategic studies journals.',
-    email:'muthukrishnan.defence@ssscollege.edu.in', phone:'+91 99400 12502', joined:'2015' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_1_1783430669817.jpg',
+    avatarColor:'#1a3a1a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
   { id:'s45', dept:'ba-defence', deptName:'B.A. Defence Studies',
-    name:'Mrs. K. Bharathi', desig:'Assistant Professor', fullTitle:'Physical Training Instructor',
-    qual:'M.P.Ed., M.Phil.', exp:'8 Years',
-    spec:'Physical Training, Sports, NCC, Yoga', photo:'staff_female_1_1783430680601.jpg',
-    avatarColor:'#2a5a2a', publications:'NCC officer. State-level sports coach.',
-    email:'bharathi.defence@ssscollege.edu.in', phone:'+91 99400 12503', joined:'2016' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Physical Training Instructor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_1_1783430680601.jpg',
+    avatarColor:'#2a5a2a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── M.Sc CS ── */
   { id:'s46', dept:'msc-cs', deptName:'M.Sc Computer Science',
-    name:'Dr. B. Sivasubramanian', desig:'HOD', fullTitle:'Head of Department & Professor',
+    name:'-----------', desig:'HOD', fullTitle:'Head of Department & Professor',
     qual:'M.Sc. (CS), M.Phil., Ph.D.', exp:'21 Years',
     spec:'Cloud Computing, Distributed Systems, Cyber Security', photo:'staff_male_3_1783430730751.jpg',
     avatarColor:'#1a3a7a', publications:'19 papers in Scopus/WoS journals. 2 patents filed. TVU BOS Member.',
     email:'sivasubramanian.msccs@ssscollege.edu.in', phone:'+91 99400 12601', joined:'2004' },
   { id:'s47', dept:'msc-cs', deptName:'M.Sc Computer Science',
-    name:'Dr. N. Sangeetha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (CS), M.Phil., Ph.D.', exp:'11 Years',
-    spec:'Advanced Algorithms, Artificial Intelligence, Research Methods', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#0a1a5a', publications:'8 papers in AI/algorithm journals. NET qualified.',
-    email:'sangeetha.msccs@ssscollege.edu.in', phone:'+91 99400 12602', joined:'2013' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#0a1a5a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
   { id:'s48', dept:'msc-cs', deptName:'M.Sc Computer Science',
-    name:'Mr. A. Vignesh', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Sc. (CS), M.Phil.', exp:'7 Years',
-    spec:'Software Architecture, Big Data, Advanced Java', photo:'staff_male_2_1783430692518.jpg',
-    avatarColor:'#1a3a7a', publications:'3 papers in software engineering conferences. AWS certified.',
-    email:'vignesh.msccs@ssscollege.edu.in', phone:'+91 99400 12603', joined:'2017' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_male_2_1783430692518.jpg',
+    avatarColor:'#1a3a7a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
 
   /* ── M.Com ── */
   { id:'s49', dept:'mcom', deptName:'M.Com',
-    name:'Dr. L. Radhakrishnan', desig:'HOD', fullTitle:'Head of Department & Professor',
-    qual:'M.Com., M.Phil., Ph.D., PGDM', exp:'20 Years',
-    spec:'Advanced Financial Accounting, Corporate Finance, Research', photo:'staff_male_3_1783430730751.jpg',
-    avatarColor:'#5a4a00', publications:'15 papers in commerce and finance journals. TVU academic council member.',
-    email:'radhakrishnan.mcom@ssscollege.edu.in', phone:'+91 99400 12701', joined:'2005' },
+    name:'--------------------', desig:'HOD', fullTitle:'Head of Department & Professor',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#0a1a5a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
   { id:'s50', dept:'mcom', deptName:'M.Com',
-    name:'Dr. S. Vasantha', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com., M.Phil., Ph.D.', exp:'12 Years',
-    spec:'International Trade, Tax Planning, Financial Markets', photo:'staff_female_3_1783430743766.jpg',
-    avatarColor:'#3a2a00', publications:'7 papers in finance and trade journals. NET qualified.',
-    email:'vasantha.mcom@ssscollege.edu.in', phone:'+91 99400 12702', joined:'2012' },
-  { id:'s51', dept:'mcom', deptName:'M.Com',
-    name:'Mr. P. Kumaresan', desig:'Assistant Professor', fullTitle:'Assistant Professor',
-    qual:'M.Com., MBA, M.Phil.', exp:'8 Years',
-    spec:'Banking Theory, Business Ethics, Securities Analysis', photo:'staff_male_1_1783430669817.jpg',
-    avatarColor:'#5a4a00', publications:'3 papers in banking and commerce journals.',
-    email:'kumaresan.mcom@ssscollege.edu.in', phone:'+91 99400 12703', joined:'2016' },
-  /* Extra staff to reach 52+ */
-  { id:'s52', dept:'mathematics', deptName:'Mathematics',
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#0a1a5a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+    name:'------------', desig:'Assistant Professor', fullTitle:'Assistant Professor',
+    qual:'--------------', exp:'-----',
+    spec:'---------------------------', photo:'staff_female_3_1783430743766.jpg',
+    avatarColor:'#0a1a5a', publications:'-------------------',
+    email:'-----------', phone:'----------', joined:'--------' },
+  { id:'s52', dept:'bsc-mathematics', deptName:'Mathematics',
     name:'Ms. T. Hemamalini', desig:'Guest Faculty', fullTitle:'Guest Faculty',
     qual:'M.Sc. (Maths), M.Phil.', exp:'2 Years',
     spec:'Mechanics, Operations Research', photo:'staff_female_2_1783430718315.jpg',
@@ -1041,7 +1048,7 @@ function loadCampusVideo() {
 /* ═════════════════════════════════════════════════════════
    CONTACT FORM
 ═════════════════════════════════════════════════════════ */
-function submitContactForm() {
+async function submitContactForm() {
   const name = document.getElementById('cName')?.value.trim()||'';
   const email= document.getElementById('cEmail')?.value.trim()||'';
   const phone= document.getElementById('cPhone')?.value.trim()||'';
@@ -1050,10 +1057,14 @@ function submitContactForm() {
   const ok   = document.getElementById('contactSuccess');
   if (!name||!email||!msg) { alert('Please fill in Name, Email and Message.'); return; }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email.'); return; }
-  alert('Thank you for your message! We will get back to you within 24 hours.');
-  if(ok) { ok.style.display='block'; ok.textContent='✅ Thank you! Your message has been received — we\'ll get back to you soon.'; }
-  ['cName','cEmail','cPhone','cMessage','cCourse'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});
-  setTimeout(()=>{ if(ok) ok.style.display='none'; },7000);
+  try {
+    await apiRequest('/contact', { method:'POST', body:{ name, email, phone, course, message: msg } });
+    if(ok) { ok.style.display='block'; ok.textContent='✅ Thank you! Your message has been received — we\'ll get back to you soon.'; }
+    ['cName','cEmail','cPhone','cMessage','cCourse'].forEach(id=>{const e=document.getElementById(id);if(e)e.value='';});
+    setTimeout(()=>{ if(ok) ok.style.display='none'; },7000);
+  } catch (e) {
+    alert('❌ Could not send your message: ' + e.message);
+  }
 }
 
 /* ═════════════════════════════════════════════════════════
@@ -1162,7 +1173,7 @@ const NOTE_TYPE_COLORS = {
 ───────────────────────────────────────────────────────── */
 let currentStaffUser = null;
 
-function staffLogin() {
+async function staffLogin() {
   const id   = (document.getElementById('stId')?.value||'').trim();
   const pass = (document.getElementById('stPassword')?.value||'').trim();
   const res  = document.getElementById('staffLoginResult');
@@ -1172,22 +1183,24 @@ function staffLogin() {
     res.textContent='❌ Please enter your Staff ID and Password.';
     return;
   }
-  const user = STAFF_USERS.find(u => u.id === id);
-  if (user && user.password === pass) {
-    currentStaffUser = { id: user.id, name: user.name, role: user.role, dept: user.dept, photo: user.photo };
+  res.style.display='block'; res.className='login-result'; res.textContent='⏳ Checking credentials…';
+  try {
+    const data = await apiRequest('/auth/staff-login', { method:'POST', body:{ staffId:id, password:pass } });
+    localStorage.setItem('sss_staff_token', data.token);
+    currentStaffUser = { id: data.staff.staffId, name: data.staff.name, role: data.staff.role, dept: data.staff.dept, photo: data.staff.photo };
+    localStorage.setItem('sss_staff', JSON.stringify(currentStaffUser));
     res.className='login-result success';
-    res.textContent=`✅ Welcome, ${user.name}! Redirecting to Staff Dashboard…`;
+    res.textContent=`✅ Welcome, ${currentStaffUser.name}! Redirecting to Staff Dashboard…`;
     setTimeout(()=>{ openStaffDashboard(currentStaffUser); }, 900);
-  } else {
+  } catch (e) {
     res.className='login-result error';
-    res.textContent='❌ Invalid credentials';
+    res.textContent='❌ ' + e.message + (e.message.includes('reach the server') ? '' : ' (Demo: STAFF001 / staff123)');
   }
 }
 
 function staffAuthToken() { return localStorage.getItem('sss_staff_token'); }
 
 function openStaffDashboard(user) {
-  sessionStorage.setItem('staff_user', JSON.stringify(user));
   const av = document.getElementById('sdAvatar');
   const nm = document.getElementById('sdName');
   const rl = document.getElementById('sdRole');
@@ -1200,7 +1213,8 @@ function openStaffDashboard(user) {
 
 function staffLogout() {
   currentStaffUser = null;
-  sessionStorage.removeItem('staff_user');
+  localStorage.removeItem('sss_staff_token');
+  localStorage.removeItem('sss_staff');
   showPage('staff');
   document.getElementById('stId').value='';
   document.getElementById('stPassword').value='';
@@ -1252,8 +1266,8 @@ function escHTML(s) {
 /* ─────────────────────────────────────────────────────────
    SUBMIT NOTE
 ───────────────────────────────────────────────────────── */
-function submitNote() {
-  if (!currentStaffUser) { alert('Please log in to the Staff Portal first.'); return; }
+async function submitNote() {
+  if (!currentStaffUser || !staffAuthToken()) { alert('Please log in to the Staff Portal first.'); return; }
   const dept    = document.getElementById('nDept')?.value||'';
   const year    = document.getElementById('nYear')?.value||'';
   const sem     = document.getElementById('nSem')?.value||'';
@@ -1273,28 +1287,26 @@ function submitNote() {
   const btn = document.getElementById('submitNoteBtn');
   if (btn) { btn.disabled=true; btn.textContent='Publishing…'; }
 
-  const existing = JSON.parse(localStorage.getItem('staff_notes') || '[]');
-  const note = {
-    id: Date.now().toString(),
-    dept, deptName: DEPT_NAMES[dept]||dept, year, sem, subject, title, topics, content, type,
-    staffName: currentStaffUser.name,
-    date: new Date().toISOString().split('T')[0],
-    timestamp: Date.now()
-  };
-  existing.push(note);
-  localStorage.setItem('staff_notes', JSON.stringify(existing));
-
-  const ok = document.getElementById('noteUploadSuccess');
-  if (ok) {
-    ok.style.display='flex';
-    ok.innerHTML=`<span style="font-size:22px;">✅</span>
-      <div><strong>Note Published Successfully!</strong><br>
-      <span style="font-size:12.5px;opacity:0.85;">"${title}" is now visible to students in the Class Notes section.</span></div>`;
-    setTimeout(()=>{ ok.style.display='none'; },6000);
+  try {
+    const data = await apiRequest('/notes', {
+      method: 'POST',
+      headers: { Authorization: 'Bearer ' + staffAuthToken() },
+      body: { dept, deptName: DEPT_NAMES[dept]||dept, year, sem, subject, title, topics, content, type }
+    });
+    const ok = document.getElementById('noteUploadSuccess');
+    if (ok) {
+      ok.style.display='flex';
+      ok.innerHTML=`<span style="font-size:22px;">✅</span>
+        <div><strong>Note Published Successfully!</strong><br>
+        <span style="font-size:12.5px;opacity:0.85;">"${title}" is now visible to students in the Class Notes section.</span></div>`;
+      setTimeout(()=>{ ok.style.display='none'; },6000);
+    }
+    clearNoteForm();
+  } catch (e) {
+    alert('❌ Could not publish note: ' + e.message);
+  } finally {
+    if (btn) { btn.disabled=false; btn.textContent='📤 Publish Note for Students'; }
   }
-  clearNoteForm();
-  renderStaffHistory();
-  if (btn) { btn.disabled=false; btn.textContent='📤 Publish Note for Students'; }
 }
 
 function clearNoteForm() {
@@ -1309,24 +1321,28 @@ function clearNoteForm() {
 /* ─────────────────────────────────────────────────────────
    STAFF HISTORY (My Uploads Tab)
 ───────────────────────────────────────────────────────── */
-function renderStaffHistory() {
+async function renderStaffHistory() {
   const container = document.getElementById('staffNoteHistory');
   if (!container||!currentStaffUser) return;
-  const all = JSON.parse(localStorage.getItem('staff_notes') || '[]');
-  const notes = all.filter(n => n.staffName === currentStaffUser.name);
-  notesById = {}; notes.forEach(n => { notesById[n.id] = n; });
-  if (!notes.length) {
-    container.innerHTML=`<div class="cn-empty" style="display:flex;">
-      <div class="cn-empty-icon">📭</div>
-      <h3>No Notes Yet</h3>
-      <p>You haven't uploaded any class notes. Go to the "Add Notes" tab to get started.</p></div>`;
-    return;
+  container.innerHTML = `<div style="padding:30px;text-align:center;color:var(--text-light);">⏳ Loading your notes…</div>`;
+  try {
+    const data = await apiRequest('/notes/mine', { headers: { Authorization: 'Bearer ' + staffAuthToken() } });
+    const notes = cacheNotes(data.notes.map(normalizeNote));
+    if (!notes.length) {
+      container.innerHTML=`<div class="cn-empty" style="display:flex;">
+        <div class="cn-empty-icon">📭</div>
+        <h3>No Notes Yet</h3>
+        <p>You haven't uploaded any class notes. Go to the "Add Notes" tab to get started.</p></div>`;
+      return;
+    }
+    container.innerHTML=`
+      <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;">
+        <strong style="color:var(--navy);">${notes.length}</strong> note(s) published by you.
+      </div>
+      <div class="cn-grid">${notes.map(n=>noteCardHTML(n, true)).join('')}</div>`;
+  } catch (e) {
+    container.innerHTML = `<div class="cn-empty" style="display:flex;"><div class="cn-empty-icon">⚠️</div><h3>Couldn't load your notes</h3><p>${e.message}</p></div>`;
   }
-  container.innerHTML=`
-    <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;">
-      <strong style="color:var(--navy);">${notes.length}</strong> note(s) published by you.
-    </div>
-    <div class="cn-grid">${notes.map(n=>noteCardHTML(n, true)).join('')}</div>`;
 }
 
 /* ═════════════════════════════════════════════════════════
@@ -1340,7 +1356,7 @@ function renderStaffHistory() {
    That's it — no server, database or login needed.
 ═════════════════════════════════════════════════════════ */
 const PDF_NOTES = [
-  { id:'pn01', dept:'bsc-cs', year:'I',  sem:'I',   subject:'Programming in C',            title:'Unit 1 – Introduction to C & Data Types',        type:'Lecture Notes',  staffName:'Sathya A',        date:'2026-06-18', fileUrl:'notes/bsc-cs/c-programming-unit1.pdf',size:'1.2 MB' },
+  { id:'pn01', dept:'bsc-cs', year:'I',  sem:'I',   subject:'Programming in C',            title:'Unit 1 – Introduction to C & Data Types',        type:'Lecture Notes',  staffName:'Sathya A',        date:'2026-06-18', fileUrl:'"Notes/2nd year/B.Sc cs/DocScanner 18 Jun 2026 6-13pm.pdf',size:'1.2 MB' },
   { id:'pn02', dept:'bsc-cs', year:'II', sem:'III', subject:'Data Structures',              title:'Unit 3 – Stacks, Queues & Linked Lists',         type:'Lecture Notes',  staffName:'P.Monisha',       date:'2026-06-20', fileUrl:'notes/bsc-cs/data-structures-unit3.pdf',      size:'2.1 MB' },
   { id:'pn03', dept:'bsc-cs', year:'III',sem:'V',   subject:'Computer Networks',            title:'Important Questions – Unit 1 to 5',              type:'Important Q&A',  staffName:'Prof.N.Venugopal',date:'2026-06-15', fileUrl:'notes/bsc-cs/networks-important-qa.pdf',      size:'860 KB' },
   { id:'pn04', dept:'bca',    year:'I',  sem:'II',  subject:'C++ Programming',              title:'OOP Concepts – Complete Notes',                  type:'Lecture Notes',  staffName:'Sangeetha D',     date:'2026-06-22', fileUrl:'notes/bca/oop-cpp-notes.pdf',                 size:'1.8 MB' },
@@ -1371,22 +1387,13 @@ function filterPdfNotes() {
   const type   = document.getElementById('cnTypeFilter')?.value||'';
   const search = (document.getElementById('cnSearch')?.value||'').trim().toLowerCase();
   const sort   = document.getElementById('cnSortFilter')?.value||'newest';
-  const dateR  = document.getElementById('cnDateFilter')?.value||'';
-
-  const now = new Date();
-  const today = now.toISOString().split('T')[0];
-  const weekAgo = new Date(now.getTime() - 7*24*60*60*1000).toISOString().split('T')[0];
-  const monthAgo = new Date(now.getFullYear(), now.getMonth()-1, now.getDate()).toISOString().split('T')[0];
 
   let notes = PDF_NOTES.filter(n =>
     (!dept || n.dept===dept) &&
     (!year || n.year===year) &&
     (!sem  || n.sem===sem)   &&
     (!type || n.type===type) &&
-    (!search || (n.title+' '+n.subject).toLowerCase().includes(search)) &&
-    (!dateR || (dateR==='today' && n.date===today) ||
-               (dateR==='week' && n.date>=weekAgo) ||
-               (dateR==='month' && n.date>=monthAgo))
+    (!search || (n.title+' '+n.subject).toLowerCase().includes(search))
   );
 
   if (sort==='newest')       notes = notes.slice().sort((a,b)=> new Date(b.date)-new Date(a.date));
@@ -1400,7 +1407,7 @@ function filterPdfNotes() {
 }
 
 function resetPdfNotesFilter() {
-  ['cnDeptFilter','cnYearFilter','cnSemFilter','cnTypeFilter','cnSearch','cnDateFilter'].forEach(id=>{
+  ['cnDeptFilter','cnYearFilter','cnSemFilter','cnTypeFilter','cnSearch'].forEach(id=>{
     const el=document.getElementById(id); if(el) el.value='';
   });
   const sf=document.getElementById('cnSortFilter'); if(sf) sf.value='newest';
@@ -1516,9 +1523,33 @@ function closePdfNoteModal(event) {
    Kept only for the Staff Dashboard's "My Notes" tab, which
    still talks to the optional backend. Not used by students.
 ───────────────────────────────────────────────────────── */
-function filterNotes() {
+async function filterNotes() {
+  const dept   = document.getElementById('cnDeptFilter')?.value||'';
+  const year   = document.getElementById('cnYearFilter')?.value||'';
+  const sem    = document.getElementById('cnSemFilter')?.value||'';
+  const type   = document.getElementById('cnTypeFilter')?.value||'';
+  const search = (document.getElementById('cnSearch')?.value||'').trim();
+  const sort   = document.getElementById('cnSortFilter')?.value||'newest';
+
   const grid = document.getElementById('cnGrid');
-  if (grid) grid.innerHTML = `<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-light);">No notes available</div>`;
+  if (grid) grid.innerHTML = `<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-light);">⏳ Loading notes…</div>`;
+
+  const params = new URLSearchParams();
+  if (dept) params.set('dept', dept);
+  if (year) params.set('year', year);
+  if (sem) params.set('sem', sem);
+  if (type) params.set('type', type);
+  if (search) params.set('search', search);
+  if (sort) params.set('sort', sort);
+
+  try {
+    const data = await apiRequest('/notes?' + params.toString());
+    const notes = cacheNotes(data.notes.map(normalizeNote));
+    renderNotesGrid(notes);
+  } catch (e) {
+    if (grid) grid.innerHTML = `<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-light);">⚠️ ${e.message}</div>`;
+  }
+  updateCnStats();
 }
 
 function resetNotesFilter() {
@@ -1574,7 +1605,18 @@ function noteCardHTML(n, isStaffView) {
   </div>`;
 }
 
-function updateCnStats() {}
+async function updateCnStats() {
+  try {
+    const data = await apiRequest('/notes');
+    const all = data.notes.map(normalizeNote);
+    const today = new Date().toISOString().split('T')[0];
+    const depts = new Set(all.map(n=>n.dept)).size;
+    const todayCount = all.filter(n=>n.date===today).length;
+    const t=document.getElementById('cnStatTotal'); if(t) t.textContent=all.length;
+    const d=document.getElementById('cnStatDepts'); if(d) d.textContent=depts;
+    const td=document.getElementById('cnStatToday'); if(td) td.textContent=todayCount;
+  } catch (e) { /* stats are non-critical; fail silently */ }
+}
 
 /* ─────────────────────────────────────────────────────────
    NOTE DETAIL MODAL
@@ -1652,14 +1694,16 @@ function printNote(noteId) {
 /* ─────────────────────────────────────────────────────────
    DELETE NOTE (Staff Only)
 ───────────────────────────────────────────────────────── */
-function deleteNote(event, noteId) {
+async function deleteNote(event, noteId) {
   event.stopPropagation();
   if (!confirm('Delete this note? Students will no longer see it.')) return;
-  let all = JSON.parse(localStorage.getItem('staff_notes') || '[]');
-  all = all.filter(n => n.id !== String(noteId));
-  localStorage.setItem('staff_notes', JSON.stringify(all));
-  delete notesById[String(noteId)];
-  renderStaffHistory();
+  try {
+    await apiRequest('/notes/' + noteId, { method:'DELETE', headers: { Authorization: 'Bearer ' + staffAuthToken() } });
+    delete notesById[String(noteId)];
+    renderStaffHistory();
+  } catch (e) {
+    alert('❌ Could not delete note: ' + e.message);
+  }
 }
 
 

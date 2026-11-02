@@ -1,63 +1,32 @@
-SSS COLLEGE — CLASS NOTES DAILY WORKFLOW
-==========================================
+HOW TO ADD REAL PDF CLASS NOTES
+================================
 
-HOW TO ADD NOTES (DAILY)
--------------------------
-Step 1: Save the PDF file
-   Place it in the correct department folder:
-     notes/bsc-cs/your-file.pdf
-     notes/bca/your-file.pdf
-     notes/bcom/your-file.pdf
-     ... (14 departments available)
+1. Put the PDF file inside the matching department folder, e.g.:
+     notes/bsc-cs/data-structures-unit4.pdf
 
-Step 2: Open script.js and add ONE entry to the PDF_NOTES array
-   Find the line that says "// ADD NEW NOTES ABOVE THIS LINE"
-   Paste this above it and fill in the details:
+2. Open script.js and find the PDF_NOTES array near the top
+   (search for "PDF CLASS NOTES"). Add one line like:
 
-   { id:'pn__',
-     dept:'bsc-cs',        // folder name
-     year:'I',             // "I" | "II" | "III"
-     sem:'I',              // "I" to "VI"
-     subject:'Subject Name',
-     title:'Lecture topic or assignment title',
-     type:'Lecture Notes', // see types below
-     staffName:'Staff Name',
-     date:'2026-07-15',    // today's date YYYY-MM-DD
-     fileUrl:'notes/bsc-cs/your-file.pdf',
-     size:'1.2 MB' },
+   { id:'pn16', dept:'bsc-cs', year:'II', sem:'III',
+     subject:'Data Structures',
+     title:'Unit 4 - Trees & Graphs',
+     type:'Lecture Notes', staffName:'P.Monisha',
+     date:'2026-07-14',
+     fileUrl:'notes/bsc-cs/data-structures-unit4.pdf',
+     size:'1.4 MB' },
 
-Step 3: Save and refresh the page
-   The note appears instantly with working View + Download buttons.
+   - id        : must be unique (pn16, pn17, ...)
+   - dept      : must match a department id used in the filter dropdown
+   - year      : "I" | "II" | "III"
+   - sem       : "I" to "VI"
+   - type      : "Lecture Notes" | "Assignment" | "Important Q&A"
+                 | "Formula Sheet" | "Reference"
+   - fileUrl   : the path to the PDF you just uploaded
 
-NO SERVER, DATABASE OR LOGIN NEEDED.
+3. Save and reload the Class Notes page - the new PDF appears
+   automatically, with working View + Download buttons.
 
-
-NOTE TYPES
-----------
-• Lecture Notes     — classroom lecture PDFs
-• Assignment        — homework and practice sheets
-• Important Q&A     — exam preparation / key questions
-• Formula Sheet     — formulae and cheat sheets
-• Reference         — textbooks, guides, supplementary material
-
-
-AVAILABLE DEPARTMENTS (folder names)
-------------------------------------
-bsc-cs, bca, bsc-data-science, bsc-ai, mathematics, english,
-bsc-chemistry, bcom, bcom-ca, bba, ba-tamil, ba-defence, msc-cs, mcom
-
-
-DATE FILTER
------------
-Students can filter notes by date:
-  Today       — notes added today
-  This Week   — notes added in the last 7 days
-  This Month  — notes added in the last 30 days
-
-
-TIPS
-----
-• Use unique IDs: pn01, pn02, pn03... (never reuse an ID)
-• date format must be YYYY-MM-DD (e.g. 2026-07-15)
-• You can test locally by opening index.html in a browser
-• No server needed — everything runs as static files
+No server, database or login is required for this to work.
+The sample entries currently in PDF_NOTES point to files that
+don't exist yet - replace fileUrl with your real PDFs before
+going live, or remove the sample rows you don't need.

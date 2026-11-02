@@ -815,7 +815,7 @@ I wish all our students a successful academic journey and a bright future.<br>
       <div class="cn-filter-bar">
         <div class="cn-filter-group">
           <label>Department</label>
-          <select id="cnDeptFilter" onchange="filterPdfNotes()">
+          <select id="cnDeptFilter" onchange="filterNotes()">
             <option value="">All Departments</option>
             <option value="bsc-cs">B.Sc Computer Science</option>
             <option value="bca">B.C.A</option>
@@ -834,7 +834,7 @@ I wish all our students a successful academic journey and a bright future.<br>
         </div>
         <div class="cn-filter-group">
           <label>Year</label>
-          <select id="cnYearFilter" onchange="filterPdfNotes()">
+          <select id="cnYearFilter" onchange="filterNotes()">
             <option value="">All Years</option>
             <option value="I">Year I</option>
             <option value="II">Year II</option>
@@ -843,7 +843,7 @@ I wish all our students a successful academic journey and a bright future.<br>
         </div>
         <div class="cn-filter-group">
           <label>Semester</label>
-          <select id="cnSemFilter" onchange="filterPdfNotes()">
+          <select id="cnSemFilter" onchange="filterNotes()">
             <option value="">All Semesters</option>
             <option value="I">Sem I</option><option value="II">Sem II</option>
             <option value="III">Sem III</option><option value="IV">Sem IV</option>
@@ -852,7 +852,7 @@ I wish all our students a successful academic journey and a bright future.<br>
         </div>
         <div class="cn-filter-group">
           <label>Type</label>
-          <select id="cnTypeFilter" onchange="filterPdfNotes()">
+          <select id="cnTypeFilter" onchange="filterNotes()">
             <option value="">All Types</option>
             <option value="Lecture Notes">Lecture Notes</option>
             <option value="Assignment">Assignment</option>
@@ -863,26 +863,17 @@ I wish all our students a successful academic journey and a bright future.<br>
         </div>
         <div class="cn-filter-group">
           <label>Search</label>
-          <input type="text" id="cnSearch" placeholder="Search title, subject, topic…" oninput="filterPdfNotes()">
-        </div>
-        <div class="cn-filter-group">
-          <label>Date Added</label>
-          <select id="cnDateFilter" onchange="filterPdfNotes()">
-            <option value="">All Time</option>
-            <option value="today">Today</option>
-            <option value="week">This Week</option>
-            <option value="month">This Month</option>
-          </select>
+          <input type="text" id="cnSearch" placeholder="Search title, subject, topic…" oninput="filterNotes()">
         </div>
         <div class="cn-filter-group">
           <label>Sort By</label>
-          <select id="cnSortFilter" onchange="filterPdfNotes()">
+          <select id="cnSortFilter" onchange="filterNotes()">
             <option value="newest">Newest First</option>
             <option value="oldest">Oldest First</option>
             <option value="subject">Subject A–Z</option>
           </select>
         </div>
-        <button class="cn-reset-btn" onclick="resetPdfNotesFilter()">↺ Reset</button>
+        <button class="cn-reset-btn" onclick="resetNotesFilter()">↺ Reset</button>
       </div>
 
       <div class="cn-result-bar">
@@ -1251,6 +1242,11 @@ I wish all our students a successful academic journey and a bright future.<br>
     </div>
   </section>
 </div><!-- /page-staff-dashboard -->
+
+<!-- ══ DEPT DETAIL PAGE ══ -->
+<div class="page" id="page-dept-detail">
+  <div id="deptDetailContent"><!-- JS rendered --></div>
+</div><!-- /page-dept-detail -->
 
 <!-- STAFF MODAL -->
 <div class="staff-modal-overlay" id="staffModalOverlay" onclick="closeStaffModal(event)">
